@@ -21,3 +21,4 @@ title_invoice = "Invoices » CecropiaCRM"
 create_invoice = (By.XPATH, '//*[@id="actionMenuSidebar"]/ul/li[1]/a/div[2]')
 title_create_invoice = "CREATE » Invoices » CecropiaCRM"
 print
+
