@@ -52,7 +52,7 @@ def test_create_invoices(browser):
 
     # Displays the project list.
     webdriver.click_btn(page_object.project_dropdown_create_invoice)
-    # time.sleep(2)
+
     # Select academy as the dropdown option on the project dropdown.
     webdriver.click_btn(page_object.academy_project_option)
     
@@ -76,5 +76,5 @@ def test_create_invoices(browser):
 
     # Click the save button.
     # webdriver.click_btn_new(page_object.save_btn_create_invoice)
-    
+
     time.sleep(5)
