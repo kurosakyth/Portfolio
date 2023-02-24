@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException
-import time
+
 class actions:
 
     # Constructor.
@@ -33,10 +33,6 @@ class actions:
         assert keys_to_send == actual_keys
 
     # Method to click / select a button / option on the page.
-    # def click_btn(self, selector):
-    #     element = self.get_element_to_click(selector)
-    #     element.click()
-
     def click_btn(self, selector):
         WebDriverWait(self.driver, 10).until(ec.element_to_be_clickable((selector))).click()
 
