@@ -8,3 +8,4 @@ def all_tests(browser):
     test_login(browser)
     test_logout(browser)
     test_create_invoices(browser)
+    
