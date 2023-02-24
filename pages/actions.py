@@ -20,8 +20,12 @@ class actions:
     # Get element from the page.
     def get_element(self, selector, timeout=10):
         return WebDriverWait(self.driver, timeout).until(ec.visibility_of_element_located(selector), BaseException)
+    
+    # Get element to be clickable.
+    def get_element_to_click(self, selector, timeout=10):
+        return WebDriverWait(self.driver, timeout).until(ec.element_to_be_clickable(selector), BaseException)
 
-        # Find element, send keys and validate the keys sent.
+    # Find element, send keys and validate the keys sent.
     def send_keys(self, selector, keys_to_send):
         element = self.get_element(selector)
         element.send_keys(keys_to_send)
@@ -29,9 +33,12 @@ class actions:
         assert keys_to_send == actual_keys
 
     # Method to click / select a button / option on the page.
+    # def click_btn(self, selector):
+    #     element = self.get_element_to_click(selector)
+    #     element.click()
+
     def click_btn(self, selector):
-        element = self.get_element(selector)
-        element.click()
+        WebDriverWait(self.driver, 10).until(ec.element_to_be_clickable((selector))).click()
 
     # Hover the object and click on it.
     def hover_and_click_btn(self, selector):
