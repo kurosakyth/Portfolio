@@ -17,8 +17,7 @@ class actions:
     def title_compare(self, title_expected):
         assert self.driver.title == title_expected
 
-    # Get element from the page, validate if there is 2 possible selectors, else use only one selector, so is possible to check one selectors if the page is not responsive as expected.
-    # Get element from the page, use only one selector
+    # Get element from the page.
     def get_element(self, selector, timeout=10):
         return WebDriverWait(self.driver, timeout).until(ec.visibility_of_element_located(selector), BaseException)
 

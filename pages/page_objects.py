@@ -3,9 +3,9 @@ from selenium.webdriver.common.by import By
 #URL
 url = "http://develop.devcrm.site/"
 tittle_login = "CecropiaCRM"
-title_crm = "Home » CecropiaCRM"
 
 #Login
+title_crm = "Home » CecropiaCRM"
 username = (By.XPATH, '//input[@id="user_name"]')
 password = (By.XPATH,'//input[@id="username_password"]')
 login_btn = (By.XPATH, '//*[@id="bigbutton"]')
@@ -19,4 +19,7 @@ logout_option = (By.XPATH, '//div[@class="desktop-bar"]/ul/li/ul/li/a[@id="logou
 #Invoices
 title_invoice = "Invoices » CecropiaCRM"
 create_invoice = (By.XPATH, '//*[@id="actionMenuSidebar"]/ul/li[1]/a/div[2]')
+
+#Create Invoices
 title_create_invoice = "CREATE » Invoices » CecropiaCRM"
+project_dropdown = ''

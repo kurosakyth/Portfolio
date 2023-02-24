@@ -50,5 +50,6 @@ def test_create_invoices(browser):
     # # Validate the Create Invoice title page.
     webdriver.title_compare(page_object.title_create_invoice)
 
-    # Go inside the Create invoices, but do not create any invoice.
+    # Click the project dropdown.
+    # webdriver.click_btn(page_object.project_dropdown)
     # time.sleep(5)
