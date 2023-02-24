@@ -37,3 +37,4 @@ class actions:
     def hover_and_click_btn(self, selector):
         element = self.get_element(selector)
         ActionChains(self.driver).move_to_element(element).click().perform()
+

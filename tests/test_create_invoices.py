@@ -47,9 +47,14 @@ def test_create_invoices(browser):
 
 #Create Invoices
 
-    # # Validate the Create Invoice title page.
+    # Validate the Create Invoice title page.
     webdriver.title_compare(page_object.title_create_invoice)
 
-    # Click the project dropdown.
-    # webdriver.click_btn(page_object.project_dropdown)
+    # Displays the project list.
+    webdriver.click_btn(page_object.project_dropdown_create_invoice)
+
+    # Select academy as the dropdown option on the project dropdown.
+    webdriver.click_btn(page_object.academy_project_option)
+    
     # time.sleep(5)
+    
