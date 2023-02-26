@@ -1,7 +1,6 @@
-from selenium.webdriver.common.by import By
 import pages.page_objects as page_object
 from pages.actions import actions
-import credentials.credentials as account
+from pages.common import login
 import time
 
 def test_create_invoices(browser):
@@ -9,27 +8,10 @@ def test_create_invoices(browser):
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
 
-    # Open the browser with the page.
-    webdriver.load_page(page_object.url)
+#LOGIN & HOMEPAGE
 
-    # Validate the Login title page.
-    webdriver.title_compare(page_object.tittle_login)
-
-#LOGIN
-
-    # Search the input and send keys.
-    webdriver.send_keys(page_object.username, account.username)
-    
-    # Search the input and send keys.
-    webdriver.send_keys(page_object.password, account.password)
-
-    # Click the log in btn.
-    webdriver.click_btn(page_object.login_btn)
-
-#HOMEPAGE
-
-    # Validate the Homepage title page.
-    webdriver.title_compare(page_object.title_crm)
+    # Log in to the page.
+    login(webdriver)
 
     # Mouse hover and click all.
     webdriver.hover_and_click_btn(page_object.all_dropdown)
@@ -77,4 +59,4 @@ def test_create_invoices(browser):
     # Click the save button.
     # webdriver.click_btn_new(page_object.save_btn_create_invoice)
 
-    time.sleep(5)
+    # time.sleep(5)
