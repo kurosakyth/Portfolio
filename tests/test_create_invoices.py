@@ -77,4 +77,4 @@ def test_create_invoices(browser):
     # Click the save button.
     # webdriver.click_btn_new(page_object.save_btn_create_invoice)
 
-    time.sleep(5)
+    # time.sleep(5)
