@@ -3,7 +3,7 @@ from pages.actions import actions
 from pages.common import login
 import time
 
-def test_invoices(browser):
+def test_invoices_SCRM_43(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)

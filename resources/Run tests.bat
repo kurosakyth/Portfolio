@@ -1,3 +1,3 @@
 cd ..
-pipenv run python -m pytest -s .\tests\test_main.py -n 5 --html=reports/report.html
+pipenv run python -m pytest -s --html=reports/report.html .\tests\runner\test_all.py -n 3 
 pause
