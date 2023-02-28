@@ -1,7 +1,7 @@
 from pages.common import login
 from pages.actions import actions
 
-def test_login(browser):
+def test_login_SCRM_2(browser):
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
 
