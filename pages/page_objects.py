@@ -2,15 +2,17 @@ from selenium.webdriver.common.by import By
 
 #URL
 url = "http://develop.devcrm.site/"
-tittle_login = "CecropiaCRM"
 
 #Login
-title_crm = "Home » CecropiaCRM"
+title_login = "CecropiaCRM"
+homepage_error = (By.XPATH, '//span[text() = "You must specify a valid username and password."]')
+error_message_login = "You must specify a valid username and password."
 username = (By.XPATH, '//input[@id="user_name"]')
 password = (By.XPATH,'//input[@id="username_password"]')
 login_btn = (By.XPATH, '//*[@id="bigbutton"]')
 
 #Homepage
+title_homepage = "Home » CecropiaCRM"
 all_dropdown = (By.XPATH, '//a[@id="grouptab_6"]')
 invoice_option = (By.XPATH, '//*[@id="toolbar"]/ul/li[8]/span[2]/ul/li[31]/a')
 profile_option = (By.XPATH, '//*[@id="with-label"]')
