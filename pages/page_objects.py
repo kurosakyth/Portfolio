@@ -14,14 +14,20 @@ login_btn = (By.ID, 'bigbutton')
 #Homepage
 title_homepage = "Home » CecropiaCRM"
 all_dropdown = (By.ID, 'grouptab_6')
-invoice_option = (By.XPATH, '//*[@id="toolbar"]/ul/li[8]/span[2]/ul/li[31]/a')
+invoice_option = (By.XPATH, '//*[@id="toolbar"]/ul/li[8]/span[2]/ul/li[32]/a')
 profile_option = (By.ID, 'with-label')
 logout_option = (By.XPATH, '//div[@class="desktop-bar"]/ul/li/ul/li/a[@id="logout_link"]')
 
 #Invoices
 title_invoice = "Invoices » CecropiaCRM"
+h1_invoice = (By.XPATH, '//*[@id="pagecontent"]/h1')
+list_of_invoice_text = (By.XPATH, '//*[@id="mainSkillsDiv"]/div/div[1]/h3')
 create_invoice = (By.XPATH, '//*[@id="actionMenuSidebar"]/ul/li[1]/a/div[2]')
+view_invoice = (By.XPATH, '//*[@id="actionMenuSidebar"]/ul/li[2]/a/div[2]')
 search_invoice = (By.XPATH, '//*[@id="dataTableInvoicesInformation_filter"]/label/input')
+num_column_invoice = (By.XPATH, '//*[@id="dataTableInvoicesInformation"]/thead/tr/th[2]')
+title_column_invoice = (By.XPATH, '//*[@id="dataTableInvoicesInformation"]/thead/tr/th[3]')
+
 
 #Create Invoices
 title_create_invoice = "CREATE » Invoices » CecropiaCRM"

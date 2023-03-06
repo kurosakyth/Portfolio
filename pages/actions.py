@@ -45,3 +45,21 @@ class actions:
         element = self.get_element(selector)
         actual_text = element.text
         assert actual_text == expected_text
+
+    # Method get the elements from the page to create the list.
+    def get_elements_from_page(self, selector, timeout=10):
+        return WebDriverWait(self.driver, timeout).until(ec.visibility_of_all_elements_located(selector), BaseException)
+
+    # Method to validate that the elements on the page are displayed.
+    def validate_elements_exist_on_page(self, locators):
+        elements = []
+        for locator in locators:
+            elements += self.get_elements_from_page(locator)
+
+        # Assert that the elements were displayed
+        for element in elements:
+            assert element.is_displayed()
+
+
+
+    
