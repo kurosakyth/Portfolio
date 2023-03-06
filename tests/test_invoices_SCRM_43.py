@@ -25,4 +25,6 @@ def test_invoices_SCRM_43(browser):
     # Validate the Invoices title page.
     webdriver.title_compare(page_object.title_invoice)
 
-    #time.sleep(5)
+    # Validate the objects of the Invoice page.
+    webdriver.validate_elements_exist_on_page([page_object.create_invoice, page_object.view_invoice, page_object.h1_invoice, page_object.list_of_invoice_text, page_object.search_invoice, page_object.num_column_invoice, page_object.title_column_invoice])
+#Missing the elements to validate, check the test case.
