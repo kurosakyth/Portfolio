@@ -2,7 +2,6 @@ import pages.page_objects as page_object
 from pages.actions import actions
 from pages.common import login
 import credentials.credentials as account
-import time
 
 def test_logout_SCRM_1(browser):
 
@@ -22,5 +21,3 @@ def test_logout_SCRM_1(browser):
 
     # Validate the Login title page.
     webdriver.title_compare(page_object.title_login)
-
-    #time.sleep(5)
