@@ -44,6 +44,7 @@ While using pytest is important to follow a specific structure, there should alw
 
 
 Github:
+Credential manager: delete the credentials for github on windows, only if you have issues with the github account.
 Make sure you have access to the repository - Ask the lead for access.
 
 Open the Visual Studio code.
