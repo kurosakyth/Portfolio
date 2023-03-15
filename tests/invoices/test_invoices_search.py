@@ -15,16 +15,16 @@ def test_invoices_search(browser):
     login(webdriver, account.username_valid, account.password_valid, page_object.title_homepage)
 
     # Mouse hover and click all.
-    webdriver.hover_and_click_btn(page_object.all_dropdown)
+    webdriver.hover_and_click_element(page_object.all_dropdown)
 
     # Click the invoices option on All.
-    webdriver.click_btn(page_object.invoice_option)
+    webdriver.click_button(page_object.invoice_option)
 
 #INVOICES
 
     # Validate the Invoices title page.
-    webdriver.title_compare(page_object.title_invoice)
+    webdriver.compare_title(page_object.title_invoice)
 
     # Search a specific word on the search input.
-    webdriver.send_keys(page_object.search_invoice, "QA WORK TYPE")
+    webdriver.send_keys_to_element(page_object.search_invoice, "QA WORK TYPE")
     # time.sleep(5)

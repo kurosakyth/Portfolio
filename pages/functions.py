@@ -9,40 +9,40 @@ class actions:
         self.driver = driver
 
     # Open the page with the link.
-    def load_page(self ,selector):
-        self.driver.get(selector) 
+    def open_page(self ,url):
+        self.driver.get(url) 
 
     # Validate the title of the page and compare if it is correct. 
-    def title_compare(self, title_expected):
+    def compare_title(self, title_expected):
         assert self.driver.title == title_expected
 
     # Get element to be clickable.
-    def get_element_to_click(self, selector, timeout=10):
+    def get_clickable_element(self, selector, timeout=10):
         return WebDriverWait(self.driver, timeout).until(ec.element_to_be_clickable(selector), BaseException)
 
     # Method to click / select a button / option on the page.
-    def click_btn(self, selector):
-        self.get_element_to_click(selector).click()
+    def click_button(self, selector):
+        self.get_clickable_element(selector).click()
 
     # Get element from the page.
-    def get_element(self, selector, timeout=10):
+    def find_element(self, selector, timeout=10):
         return WebDriverWait(self.driver, timeout).until(ec.visibility_of_element_located(selector), BaseException)
     
     # Find element, send keys and validate the keys sent.
-    def send_keys(self, selector, keys_to_send):
-        element = self.get_element(selector)
+    def send_keys_to_element(self, selector, keys_to_send):
+        element = self.find_element(selector)
         element.send_keys(keys_to_send)
         actual_keys = element.get_attribute("value")
         assert keys_to_send == actual_keys
 
     # Hover the object and click on it.
-    def hover_and_click_btn(self, selector):
-        element = self.get_element(selector)
+    def hover_and_click_element(self, selector):
+        element = self.find_element(selector)
         ActionChains(self.driver).move_to_element(element).click().perform()
 
     # Method to validate the text from the page.
-    def validate_text(self, selector, expected_text):
-        element = self.get_element(selector)
+    def verify_text(self, selector, expected_text):
+        element = self.find_element(selector)
         actual_text = element.text
         assert actual_text == expected_text
 
@@ -51,7 +51,7 @@ class actions:
         return WebDriverWait(self.driver, timeout).until(ec.visibility_of_all_elements_located(selector), BaseException)
 
     # Method to validate that the elements on the page are displayed.
-    def validate_elements_exist_on_page(self, locators):
+    def verify_elements_exist(self, locators):
         elements = []
         for locator in locators:
             elements += self.get_elements_from_page(locator)
@@ -59,7 +59,3 @@ class actions:
         # Assert that the elements were displayed
         for element in elements:
             assert element.is_displayed()
-
-
-
-    
