@@ -12,52 +12,52 @@ def test_SCRM_347_login_invalid(browser):
     #LOGIN & HOMEPAGE
 
     # Log in to the page with invalid credentials.
-    login(webdriver, account.username_invalid1, account.password_invalid1, page_object.title_login)
+    login(webdriver, account.username_invalid_1, account.password_invalid_1, page_object.title_login)
 
     # Validate the error message.
-    webdriver.validate_text(page_object.homepage_error, page_object.error_message_login)
+    webdriver.verify_text(page_object.homepage_error, page_object.error_message_login)
 
 #Test 2 password invalid.
     #LOGIN & HOMEPAGE
 
     # Log in to the page with invalid credentials.
-    login(webdriver, account.username_invalid2, account.password_invalid2, page_object.title_login)
+    login(webdriver, account.username_invalid_2, account.password_invalid_2, page_object.title_login)
 
     # Validate the error message.
-    webdriver.validate_text(page_object.homepage_error, page_object.error_message_login)
+    webdriver.verify_text(page_object.homepage_error, page_object.error_message_login)
 
 #Test 3 password invalid.
     #LOGIN & HOMEPAGE
 
     # Log in to the page with invalid credentials.
-    login(webdriver, account.username_invalid3, account.password_invalid3, page_object.title_login)
+    login(webdriver, account.username_invalid_3, account.password_invalid_3, page_object.title_login)
 
     # Validate the error message.
-    webdriver.validate_text(page_object.homepage_error, page_object.error_message_login)
+    webdriver.verify_text(page_object.homepage_error, page_object.error_message_login)
 
 #Test 4 password invalid.
     #LOGIN & HOMEPAGE
 
     # Log in to the page with invalid credentials.
-    login(webdriver, account.username_invalid4, account.password_invalid4, page_object.title_login)
+    login(webdriver, account.username_invalid_4, account.password_invalid_4, page_object.title_login)
 
     # Validate the error message.
-    webdriver.validate_text(page_object.homepage_error, page_object.error_message_login)
+    webdriver.verify_text(page_object.homepage_error, page_object.error_message_login)
 
 #Test 5 password invalid.
     #LOGIN & HOMEPAGE
 
     # Log in to the page with invalid credentials.
-    login(webdriver, account.username_invalid5, account.password_invalid5, page_object.title_login)
+    login(webdriver, account.username_invalid_5, account.password_invalid_5, page_object.title_login)
 
     # Validate the error message.
-    webdriver.validate_text(page_object.homepage_error, page_object.error_message_login)
+    webdriver.verify_text(page_object.homepage_error, page_object.error_message_login)
 
 #Test 6 password invalid.
     #LOGIN & HOMEPAGE
 
     # Log in to the page with invalid credentials.
-    login(webdriver, account.username_invalid6, account.password_invalid6, page_object.title_login)
+    login(webdriver, account.username_invalid_6, account.password_invalid_6, page_object.title_login)
 
     # Validate the error message.
-    webdriver.validate_text(page_object.homepage_error, page_object.error_message_login)
+    webdriver.verify_text(page_object.homepage_error, page_object.error_message_login)
