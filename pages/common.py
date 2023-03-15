@@ -1,4 +1,4 @@
-import pages.page_objects as page_object
+import pages.locators as page_object
 
 def login(webdriver, username, password, title_of_the_page):
     

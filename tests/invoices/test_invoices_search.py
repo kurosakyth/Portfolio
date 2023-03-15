@@ -1,10 +1,10 @@
-import pages.page_objects as page_object
-from pages.actions import actions
+import pages.locators as page_object
+from pages.functions import actions
 from pages.common import login
 import credentials.credentials as account
 import time
 
-def test_invoices_SCRM_43(browser):
+def test_invoices_search(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
@@ -25,6 +25,6 @@ def test_invoices_SCRM_43(browser):
     # Validate the Invoices title page.
     webdriver.title_compare(page_object.title_invoice)
 
-    # Validate the objects of the Invoice page.
-    webdriver.validate_elements_exist_on_page([page_object.create_invoice, page_object.view_invoice, page_object.h1_invoice, page_object.list_of_invoice_text, page_object.search_invoice, page_object.num_column_invoice, page_object.title_column_invoice])
-#Missing the elements to validate, check the test case.
+    # Search a specific word on the search input.
+    webdriver.send_keys(page_object.search_invoice, "QA WORK TYPE")
+    # time.sleep(5)
