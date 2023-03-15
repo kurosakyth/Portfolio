@@ -1,5 +1,5 @@
-import pages.page_objects as page_object
-from pages.actions import actions
+import pages.locators as page_object
+from pages.functions import actions
 from pages.common import login
 import credentials.credentials as account
 import time

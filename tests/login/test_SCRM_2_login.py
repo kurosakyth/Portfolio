@@ -1,9 +1,9 @@
 from pages.common import login
-from pages.actions import actions
+from pages.functions import actions
 import credentials.credentials as account
-import pages.page_objects as page_object
+import pages.locators as page_object
 
-def test_login_SCRM_2(browser):
+def test_SCRM_2_login(browser):
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
 
