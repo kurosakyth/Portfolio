@@ -3,7 +3,7 @@
 #-- Run all the tests:
 
 cd ..
-pipenv run python -m pytest -s --html=reports/report.html .\tests\runner\test_all.py -n 4 
+pipenv run python -m pytest -s --html=reports/report.html .\tests\runner\test_all.py -n 3 
 pause
 
 #-- Run invoices tests:
@@ -77,3 +77,33 @@ Note that you are going to merge the branch selected (the one assigned to you) t
 Add a message for the pull request.
 Click on create pull request.
 Wait for the merge or the rejection of the pull request.
+
+
+Standards:
+For files:
+credentials.
+pages (logic).
+reports.
+resources.
+tests.
+Module_1 (invoice).
+Module_2 (skills).
+runners.
+
+For functions (defs):
+open_page 
+compare_title
+get_clickable_element
+click_button 
+find_element 
+send_keys_to_element 
+hover_and_click_element 
+verify_text
+get_elements_from_page 
+verify_elements_exist
+
+For credentials name:
+username_invalid_1
+password_invalid_1
+username_valid
+password_valid
