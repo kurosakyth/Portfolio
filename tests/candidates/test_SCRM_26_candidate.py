@@ -4,7 +4,7 @@ from pages.common import login
 import credentials.credentials as account
 import time
 
-def test_SCRM_43_invoices(browser):
+def test_SCRM_26_candidate(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
