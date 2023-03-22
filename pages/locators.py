@@ -81,5 +81,3 @@ hr_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[2]')
 private_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[3]')
 qa_security_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[4]')
 qa_test_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[5]')
-
-
