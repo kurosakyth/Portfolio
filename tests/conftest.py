@@ -4,8 +4,8 @@ import pytest
 
 # Set browser options to make it headless.
 option = Options()
-# option.add_argument("--headless")
-# option.add_argument('--disable-gpu')
+option.add_argument("--headless")
+option.add_argument('--disable-gpu')
 
 # fixture where is set the chrome driver as default, implicit wait to 10, to return the driver and quit.
 @pytest.fixture
