@@ -56,6 +56,7 @@ search_candidate = (By.XPATH,'//*[@id="dataTableCandidates_filter"]/label/input'
 security_groups_candidate = (By.XPATH,'//*[@id="massassign_form"]/table[1]/tbody/tr/td[1]/h3/span')
 assign_button_candidate = (By.XPATH,'//*[@id="massassign_form"]/table[2]/tbody/tr/td/input[1]')
 remove_button_candidate = (By.XPATH,'//*[@id="massassign_form"]/table[2]/tbody/tr/td/input[2]')
+name_on_table_candidate = (By.XPATH, '//*[@id="txt_name"]')
     #CANDIDATE - Columns of table
 name_column_candidate = (By.XPATH, '//*[@id="dataTableCandidates"]/thead/tr/th[2]')
 first_name_column_candidate = (By.XPATH, '//*[@id="dataTableCandidates"]/thead/tr/th[3]')
@@ -81,5 +82,3 @@ hr_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[2]')
 private_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[3]')
 qa_security_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[4]')
 qa_test_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[5]')
-
-

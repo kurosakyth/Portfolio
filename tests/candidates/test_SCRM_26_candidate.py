@@ -20,7 +20,7 @@ def test_SCRM_26_candidate(browser):
     # Click the candidates option on All.
     webdriver.click_button(page_object.candidate_option)
 
-#Candidates
+#CANDIDATES
 
     # Validate the Candidates title page.
     webdriver.compare_title(page_object.title_candidates)
