@@ -28,7 +28,7 @@ def test_SCRM_331_search_candidate(browser):
     # Search a specific word on the search input.
     webdriver.send_keys_to_element(page_object.search_candidate, "Eddy, Cortez")
 
-    # Validar la búsqueda.
+    # Validate the search made on the table.
     webdriver.verify_text(page_object.name_on_table_candidate, "Eddy, Cortez")
 
     # time.sleep(5)
