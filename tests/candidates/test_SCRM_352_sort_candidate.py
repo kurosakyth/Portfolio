@@ -1,0 +1,92 @@
+import pages.locators as page_object
+from pages.functions import actions
+import pages.common as common
+import credentials.credentials as account
+import time
+
+def test_SCRM_352_sort_candidate(browser):
+    
+    # Using the fixture configuration run the browser.
+    webdriver = actions(browser)
+
+#LOGIN & HOMEPAGE
+
+    # Log in to the page with valid credentials.
+    common.login(webdriver, account.username_valid, account.password_valid, page_object.title_homepage)
+
+#CANDIDATE
+
+    # Go to the Candidates page.
+    common.all_option_selector(webdriver)
+
+    # Ascending
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.name_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.name_on_table_candidate, 'Aarón Alonso, Sibaja Méndez')
+
+    # Descending 
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.name_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.name_on_table_candidate, 'Óscar, Cordero Fernández')
+
+    # Ascending
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.first_name_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.first_name_on_table_candidate, 'Aarón')
+
+    # Descending
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.first_name_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.first_name_on_table_candidate, 'Óscar')
+
+    # Ascending
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.last_name_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.last_name_on_table_candidate, 'A')
+
+    # Descending
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.last_name_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.last_name_on_table_candidate, 'Zúñiga Morera')
+
+    # Ascending
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.city_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.city_on_table_candidate, 'Agua caliente')
+
+    # Descending
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.city_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.city_on_table_candidate, 'Zona Bananera (Orihueca)')
+
+    # Ascending
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.country_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.country_on_table_candidate, 'AFGHANISTAN') 
+
+    # Descending
+    # Click on the name's sort of the table.
+    webdriver.click_button(page_object.country_sort_candidate)
+
+    # Check the text of the column on the table.
+    webdriver.verify_text(page_object.country_on_table_candidate, 'VENEZUELA')           
+
+    # time.sleep(5)

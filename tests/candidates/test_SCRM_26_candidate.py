@@ -1,6 +1,6 @@
 import pages.locators as page_object
 from pages.functions import actions
-from pages.common import login
+import pages.common as common
 import credentials.credentials as account
 import time
 
@@ -12,18 +12,12 @@ def test_SCRM_26_candidate(browser):
 #LOGIN & HOMEPAGE
 
     # Log in to the page with valid credentials.
-    login(webdriver, account.username_valid, account.password_valid, page_object.title_homepage)
+    common.login(webdriver, account.username_valid, account.password_valid, page_object.title_homepage)
 
-    # Mouse hover and click all.
-    webdriver.hover_and_click_element(page_object.all_dropdown)
+#CANDIDATE
 
-    # Click the candidates option on All.
-    webdriver.click_button(page_object.candidate_option)
-
-#CANDIDATES
-
-    # Validate the Candidates title page.
-    webdriver.compare_title(page_object.title_candidates)
+    # Go to the Candidates page.
+    common.all_option_selector(webdriver)
 
     # Validate the objects of the Candidate page.
     webdriver.verify_elements_exist([page_object.create_candidate, page_object.view_candidate, page_object.import_candidate,

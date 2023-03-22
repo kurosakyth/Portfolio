@@ -23,3 +23,15 @@ def login(webdriver, username, password, title_of_the_page):
 
     # Validate the Homepage title page.
     webdriver.compare_title(title_of_the_page)
+
+def all_option_selector(webdriver):
+    # Mouse hover and click all.
+    webdriver.hover_and_click_element(page_object.all_dropdown)
+
+    # Click the candidates option on All.
+    webdriver.click_button(page_object.candidate_option)
+
+#CANDIDATES
+
+    # Validate the Candidates title page.
+    webdriver.compare_title(page_object.title_candidates)
