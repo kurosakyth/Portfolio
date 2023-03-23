@@ -46,6 +46,22 @@ class actions:
         actual_text = element.text
         assert actual_text == expected_text
 
+    # Method to clear an input.
+    def clear_input(self, selector):
+        element = self.find_element(selector)
+        element.clear()
+
+    # Write on the search input and clear it after verify the information searched.
+    def search_clear_input(self, search_element, element_on_table, text):
+        self.send_keys_to_element(search_element, text)
+        self.verify_text(element_on_table, text)
+        self.clear_input(search_element)
+    
+    # Click on an element and verify text.
+    def click_verify(self, element, element_text, text):
+        self.click_button(element)
+        self.verify_text(element_text, text)
+
     # Method get the elements from the page to create the list.
     def get_elements_from_page(self, selector, timeout=10):
         return WebDriverWait(self.driver, timeout).until(ec.visibility_of_all_elements_located(selector), BaseException)
