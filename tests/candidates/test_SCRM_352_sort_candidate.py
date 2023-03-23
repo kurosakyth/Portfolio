@@ -19,74 +19,34 @@ def test_SCRM_352_sort_candidate(browser):
     # Go to the Candidates page.
     common.all_option_selector(webdriver)
 
-    # Ascending
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.name_sort_candidate)
+    # Ascending name.
+    webdriver.click_verify(page_object.name_sort_candidate, page_object.name_on_table_candidate, 'Aarón Alonso, Sibaja Méndez')
 
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.name_on_table_candidate, 'Aarón Alonso, Sibaja Méndez')
+    # Descending name.
+    webdriver.click_verify(page_object.name_sort_candidate, page_object.name_on_table_candidate, 'Óscar, Cordero Fernández')
 
-    # Descending 
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.name_sort_candidate)
+    # Ascending first name.
+    webdriver.click_verify(page_object.first_name_sort_candidate, page_object.first_name_on_table_candidate, 'Aarón')
 
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.name_on_table_candidate, 'Óscar, Cordero Fernández')
+    # Descending first name.
+    webdriver.click_verify(page_object.first_name_sort_candidate, page_object.first_name_on_table_candidate, 'Óscar')
 
-    # Ascending
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.first_name_sort_candidate)
+    # Ascending last name.
+    webdriver.click_verify(page_object.last_name_sort_candidate, page_object.last_name_on_table_candidate, 'A')
 
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.first_name_on_table_candidate, 'Aarón')
+    # Descending last name.
+    webdriver.click_verify(page_object.last_name_sort_candidate, page_object.last_name_on_table_candidate, 'Zúñiga Morera')
 
-    # Descending
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.first_name_sort_candidate)
+    # Ascending city.
+    webdriver.click_verify(page_object.city_sort_candidate, page_object.city_on_table_candidate, 'Agua caliente')
 
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.first_name_on_table_candidate, 'Óscar')
+    # Descending city.
+    webdriver.click_verify(page_object.city_sort_candidate, page_object.city_on_table_candidate, 'Zona Bananera (Orihueca)')
 
-    # Ascending
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.last_name_sort_candidate)
+    # Ascending country.
+    webdriver.click_verify(page_object.country_sort_candidate, page_object.country_on_table_candidate, 'AFGHANISTAN')
 
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.last_name_on_table_candidate, 'A')
-
-    # Descending
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.last_name_sort_candidate)
-
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.last_name_on_table_candidate, 'Zúñiga Morera')
-
-    # Ascending
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.city_sort_candidate)
-
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.city_on_table_candidate, 'Agua caliente')
-
-    # Descending
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.city_sort_candidate)
-
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.city_on_table_candidate, 'Zona Bananera (Orihueca)')
-
-    # Ascending
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.country_sort_candidate)
-
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.country_on_table_candidate, 'AFGHANISTAN') 
-
-    # Descending
-    # Click on the name's sort of the table.
-    webdriver.click_button(page_object.country_sort_candidate)
-
-    # Check the text of the column on the table.
-    webdriver.verify_text(page_object.country_on_table_candidate, 'VENEZUELA')           
+    # Descending country.
+    webdriver.click_verify(page_object.country_sort_candidate, page_object.country_on_table_candidate, 'VENEZUELA')
 
     # time.sleep(5)
