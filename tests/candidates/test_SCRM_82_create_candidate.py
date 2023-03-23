@@ -4,7 +4,7 @@ import pages.common as common
 import credentials.credentials as account
 import time
 
-def test_SCRM_26_candidate(browser):
+def test_SCRM_82_create_candidate(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
@@ -36,7 +36,7 @@ def test_SCRM_26_candidate(browser):
     (page_object.email_validation_candidate, 'Missing required field: Email'),
     (page_object.city_validation_candidate, 'Missing required field: City')]
     
-    # For to verify the text on the 
+    # For to verify the text on the required fields.
     for field in fields:
         webdriver.verify_text(field[0], field[1])
 

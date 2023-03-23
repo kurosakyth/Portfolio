@@ -19,17 +19,14 @@ def test_SCRM_331_search_candidate(browser):
     # Go to the Candidates page.
     common.all_option_selector(webdriver)
 
-    # Write on the input using the name on the table.
-    webdriver.search_clear_input(page_object.search_candidate, page_object.name_on_table_candidate, "Eddy, Cortez")
+    # Parameterize the validation messages.
+    fields = [
+        (page_object.name_on_table_candidate, "Eddy, Cortez"),
+        (page_object.first_name_on_table_candidate, "Aarón"),
+        (page_object.last_name_on_table_candidate, "Mena Nuñez"),
+        (page_object.city_on_table_candidate, "Puerto La Cruz"),
+        (page_object.country_on_table_candidate, "VENEZUELA")]
 
-    # Write on the input using the first name with accent mark on the table. 
-    webdriver.search_clear_input(page_object.search_candidate, page_object.first_name_on_table_candidate, "Aarón")
- 
-    # Write on the input using the last name with 'ñ' on the table.
-    webdriver.search_clear_input(page_object.search_candidate, page_object.last_name_on_table_candidate, "Mena Nuñez")
-
-    # Write on the input using the city with spaces on the table. 
-    webdriver.search_clear_input(page_object.search_candidate, page_object.city_on_table_candidate, "Puerto La Cruz")
-
-    # Write on the input using the country with capital letters on the table. 
-    webdriver.search_clear_input(page_object.search_candidate, page_object.country_on_table_candidate, "VENEZUELA")
+    # For to verify the text on the required fields.
+    for field in fields:
+        webdriver.search_clear_input(page_object.search_candidate, field[0], field[1])
