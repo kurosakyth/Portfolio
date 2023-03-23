@@ -19,10 +19,17 @@ def test_SCRM_331_search_candidate(browser):
     # Go to the Candidates page.
     common.all_option_selector(webdriver)
 
-    # Search a specific word on the search input.
-    webdriver.send_keys_to_element(page_object.search_candidate, "Eddy, Cortez")
+    # Write on the input using the name on the table.
+    webdriver.search_clear_input(page_object.search_candidate, page_object.name_on_table_candidate, "Eddy, Cortez")
 
-    # Validate the search made on the table.
-    webdriver.verify_text(page_object.name_on_table_candidate, "Eddy, Cortez")
+    # Write on the input using the first name with accent mark on the table. 
+    webdriver.search_clear_input(page_object.search_candidate, page_object.first_name_on_table_candidate, "Aarón")
+ 
+    # Write on the input using the last name with 'ñ' on the table.
+    webdriver.search_clear_input(page_object.search_candidate, page_object.last_name_on_table_candidate, "Mena Nuñez")
 
-    # time.sleep(5)
+    # Write on the input using the city with spaces on the table. 
+    webdriver.search_clear_input(page_object.search_candidate, page_object.city_on_table_candidate, "Puerto La Cruz")
+
+    # Write on the input using the country with capital letters on the table. 
+    webdriver.search_clear_input(page_object.search_candidate, page_object.country_on_table_candidate, "VENEZUELA")
