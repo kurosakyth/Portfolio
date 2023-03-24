@@ -22,7 +22,6 @@ def test_SCRM_331_search_candidate(browser):
 
     # Write on the search input for a candidate.
     webdriver.send_keys_to_element(page_object.search_candidate, 'Walden')
-    #--------------- no da click en name en la tabla.
 
     # Click on the candidate searched.
     webdriver.click_button(page_object.result_searched_test_candidate)
