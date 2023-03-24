@@ -93,13 +93,26 @@ qa_security_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/opt
 qa_test_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[5]')
 
 #CREATE CANDIDATE
-save_btn_create_candidate = (By.ID, 'SAVE')
+title_create_candidate = 'CREATE » Candidate » CecropiaCRM'
+first_name_create_candidate = (By.ID, 'first_name')
 first_name_validation_message_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[1]/div[2]/div')
+document_create_candidate = (By.ID, 'document_number')
 document_number_validation_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[5]/div[2]/div')
+mobile_create_candidate = (By.ID, 'mobile')
 mobile_validation_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[9]/div[2]/div')
+country_create_candidate = (By.ID, 'country')
 country_validation_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[21]/div[2]/div')
+state_province_create_candidate = (By.ID, 'state_province')
 state_province_validation_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[25]/div[2]/div')
+last_name_create_candidate = (By.ID, 'last_name')
 last_name_validation_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[2]/div[2]/div')
+email_create_candidate = (By.ID, 'email')
 email_validation_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[6]/div[2]/div')
+city_create_candidate = (By.ID, 'city')
 city_validation_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[22]/div[2]/div')
-#'//li[text()="Academy Old"]'
+save_btn_create_candidate = (By.CSS_SELECTOR, '#SAVE')
+
+#VIEW CANDIDATE
+title_walden_candidate_view = ('Walden, Schmidt » Candidate » CecropiaCRM')
+name_view_candidate = (By.XPATH, '//*[@id="top-panel--1"]/div/div[1]/div[1]/div[2]')
+delete_view_candidate = (By.ID, 'delete_button')
