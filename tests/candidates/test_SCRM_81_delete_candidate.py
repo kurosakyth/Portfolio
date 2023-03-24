@@ -31,8 +31,9 @@ def test_SCRM_331_search_candidate(browser):
     
     # Click on delete button on the candidate view.
     webdriver.click_button(page_object.delete_view_candidate)
-    #Is not clicking on the accept alert.
-    time.sleep(5)
 
     # Accept the alert to delete.
-    Alert(browser).accept()
+    webdriver.alert_click()
+
+    # Verify the candidate title of the page.
+    webdriver.compare_title(page_object.title_candidates)
