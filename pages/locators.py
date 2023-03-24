@@ -58,7 +58,7 @@ assign_button_candidate = (By.XPATH,'//*[@id="massassign_form"]/table[2]/tbody/t
 remove_button_candidate = (By.XPATH,'//*[@id="massassign_form"]/table[2]/tbody/tr/td/input[2]')
 name_on_table_candidate = (By.ID, 'txt_name')
 first_name_on_table_candidate = (By.ID, 'txt_first_name')
-first_name_link_result_candidate = (By.XPATH, '//a[contains(@href,"module=CC_Candidate")]')#Para seleccionar el elemento de la tabla.
+result_searched_test_candidate = (By.XPATH, '//*[@id="dataTableCandidates"]/tbody/tr[1]/td[2]/div/a')#'//*[@id="dataTableCandidates"]/tbody/tr[1]/td[1]/a')#Para seleccionar el elemento de la tabla.
 last_name_on_table_candidate = (By.ID, 'txt_last_name')
 city_on_table_candidate = (By.ID, 'txt_city')
 country_on_table_candidate = (By.ID, 'txt_country')
