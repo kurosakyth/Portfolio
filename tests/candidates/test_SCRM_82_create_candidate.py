@@ -3,6 +3,7 @@ from pages.functions import actions
 import pages.common as common
 import credentials.credentials as account
 import time
+from selenium.webdriver.common.alert import Alert
 
 def test_SCRM_82_create_candidate(browser):
     
@@ -57,16 +58,22 @@ def test_SCRM_82_create_candidate(browser):
     # For to verify the text on the required fields.
     for field in fields_to_fill_the_information:
         webdriver.send_keys_to_element(field[0], field[1])
-    #Currently not working
-    # # Click the Save button.
-    # webdriver.click_button(page_object.save_btn_create_candidate)
+    
+#Change the time.sleep for something that wait to the form to be completed.
+    time.sleep(3)
+    # Click the Save button.
+    webdriver.click_button(page_object.save_btn_create_candidate)
 
-    # # Validate the title of the Create Candidates page.
-    # webdriver.compare_title(page_object.title_walden_candidate_view)
+    # Validate the title of the Create Candidates page.
+    webdriver.compare_title(page_object.title_walden_candidate_view)
 
-    # # Verify the correctly creation of the candidate.
-    # webdriver.verify_text(page_object.name_view_candidate, 'Walden')
-
-    # # Delete the Candidate created.
+    # Verify the correctly creation of the candidate.
+    webdriver.verify_text(page_object.name_view_candidate, 'Walden')
+#Is not part of the testcase.
+    # Delete the Candidate created.
     # webdriver.click_button(page_object.delete_view_candidate)
+
+    # # Accept the alert to delete the Candidate.
+    # Alert(browser).accept()
+
     # time.sleep(5)

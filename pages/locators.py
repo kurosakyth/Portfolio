@@ -58,6 +58,7 @@ assign_button_candidate = (By.XPATH,'//*[@id="massassign_form"]/table[2]/tbody/t
 remove_button_candidate = (By.XPATH,'//*[@id="massassign_form"]/table[2]/tbody/tr/td/input[2]')
 name_on_table_candidate = (By.ID, 'txt_name')
 first_name_on_table_candidate = (By.ID, 'txt_first_name')
+first_name_link_result_candidate = (By.XPATH, '//a[contains(@href,"module=CC_Candidate")]')#Para seleccionar el elemento de la tabla.
 last_name_on_table_candidate = (By.ID, 'txt_last_name')
 city_on_table_candidate = (By.ID, 'txt_city')
 country_on_table_candidate = (By.ID, 'txt_country')
@@ -110,7 +111,7 @@ email_create_candidate = (By.ID, 'email')
 email_validation_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[6]/div[2]/div')
 city_create_candidate = (By.ID, 'city')
 city_validation_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[22]/div[2]/div')
-save_btn_create_candidate = (By.CSS_SELECTOR, '#SAVE')
+save_btn_create_candidate = (By.XPATH, '//div/input[@title="Save"]')
 
 #VIEW CANDIDATE
 title_walden_candidate_view = ('Walden, Schmidt » Candidate » CecropiaCRM')
