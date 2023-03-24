@@ -1,6 +1,8 @@
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
+import time
 
 class actions:
 
@@ -14,6 +16,7 @@ class actions:
 
     # Validate the title of the page and compare if it is correct. 
     def compare_title(self, title_expected):
+        WebDriverWait(self.driver, 10).until(ec.title_is(title_expected))
         assert self.driver.title == title_expected
 
     # Get element to be clickable.
@@ -25,30 +28,30 @@ class actions:
         self.get_clickable_element(selector).click()
 
     # Get element from the page.
-    def find_element(self, selector, timeout=10):
+    def get_element(self, selector, timeout=10):
         return WebDriverWait(self.driver, timeout).until(ec.visibility_of_element_located(selector), BaseException)
     
     # Find element, send keys and validate the keys sent.
     def send_keys_to_element(self, selector, keys_to_send):
-        element = self.find_element(selector)
+        element = self.get_element(selector)
         element.send_keys(keys_to_send)
         actual_keys = element.get_attribute("value")
         assert keys_to_send == actual_keys
 
     # Hover the object and click on it.
     def hover_and_click_element(self, selector):
-        element = self.find_element(selector)
+        element = self.get_element(selector)
         ActionChains(self.driver).move_to_element(element).click().perform()
 
     # Method to validate the text from the page.
     def verify_text(self, selector, expected_text):
-        element = self.find_element(selector)
+        element = self.get_element(selector)
         actual_text = element.text
         assert actual_text == expected_text
 
     # Method to clear an input.
     def clear_input(self, selector):
-        element = self.find_element(selector)
+        element = self.get_element(selector)
         element.clear()
 
     # Write on the search input and clear it after verify the information searched.
@@ -75,3 +78,7 @@ class actions:
         # Assert that the elements were displayed
         for element in elements:
             assert element.is_displayed()
+
+    def alert_click(self):
+        alert = self.driver.switch_to.alert
+        alert.accept()
