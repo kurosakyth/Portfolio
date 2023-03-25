@@ -5,7 +5,7 @@ import credentials.credentials as account
 import time
 from selenium.webdriver.common.alert import Alert
 
-def test_SCRM_331_search_candidate(browser):
+def test_SCRM_81_delete_candidate(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
