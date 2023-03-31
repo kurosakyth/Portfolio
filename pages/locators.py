@@ -58,7 +58,7 @@ assign_button_candidate = (By.XPATH,'//*[@id="massassign_form"]/table[2]/tbody/t
 remove_button_candidate = (By.XPATH,'//*[@id="massassign_form"]/table[2]/tbody/tr/td/input[2]')
 name_on_table_candidate = (By.ID, 'txt_name')
 first_name_on_table_candidate = (By.ID, 'txt_first_name')
-result_searched_test_candidate = (By.XPATH, '//*[@id="dataTableCandidates"]/tbody/tr[1]/td[2]/div/a')#'//*[@id="dataTableCandidates"]/tbody/tr[1]/td[1]/a')#Para seleccionar el elemento de la tabla.
+result_searched_test_candidate = (By.XPATH, '//*[@id="dataTableCandidates"]/tbody/tr[1]/td[2]/div/a')#Para seleccionar el elemento de la tabla.
 last_name_on_table_candidate = (By.ID, 'txt_last_name')
 city_on_table_candidate = (By.ID, 'txt_city')
 country_on_table_candidate = (By.ID, 'txt_country')
@@ -115,5 +115,35 @@ save_btn_create_candidate = (By.XPATH, '//div/input[@title="Save"]')
 
 #VIEW CANDIDATE
 title_walden_candidate_view = ('Walden, Schmidt » Candidate » CecropiaCRM')
-name_view_candidate = (By.XPATH, '//*[@id="top-panel--1"]/div/div[1]/div[1]/div[2]')
+edit_view_candidate = (By.ID, 'edit_button')
+duplicate_view_candidate = (By.ID, 'duplicate_button')
 delete_view_candidate = (By.ID, 'delete_button')
+find_duplicate_view_candidate = (By.ID, 'merge_duplicate_button')
+view_change_log_view_candidate = (By.ID, 'btn_view_change_log')
+
+    #SUBPANEL BASIC
+basic_subp_view_candidate = (By.XPATH, '//*[@id="pagecontent"]/div[2]/div[4]/div[2]/div[1]/a/div')
+name_view_candidate = (By.XPATH, '//*[@id="top-panel--1"]/div/div[1]/div[1]/div[2]')
+
+    #SUBPANEL EXPERIENCE & EDUCATION
+exp_educ_sub_view_candidate = (By.XPATH, '//*[@id="pagecontent"]/div[2]/div[4]/div[3]/div[1]/a/div')
+
+    #SUBPANEL PROFILE MATCHER
+profile_match_sub_view_candidate = (By.XPATH, '//*[@id="pagecontent"]/div[3]/div[1]/div/a/div')
+all_match_sub_view_candidate = (By.XPATH, '//*[@id="All_sp_tab"]/a')
+activities_match_sub_view_candidate = (By.XPATH, '//*[@id="Activities_sp_tab"]/a')
+invoices_match_sub_view_candidate = (By.XPATH, '//*[@id="Invoices_sp_tab"]/a')
+recruitment_match_sub_view_candidate = (By.XPATH, '//*[@id="Recruitment_sp_tab"]/a')
+other_match_sub_view_candidate = (By.XPATH, '//*[@id="Other_sp_tab"]/a')
+
+candidate_accounts_view_candidate = (By.ID, 'subpanel_title_cc_candidate_accounts')
+job_offer_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_job_offer')
+candidate_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_candidate_note')
+interviews_view_candidate = (By.ID, 'subpanel_title_cc_interviews_cc_candidate')
+candi_availab_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_availability_cc_candidate')
+candi_track_log_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_track_log_cc_candidate')
+skills_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_skill')
+special_notes_view_candidate = (By.ID, 'subpanel_title_cc_candidate_notes')
+personality_test_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_personality_test')
+qualifications_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_qualification')
+security_groups_view_candidate = (By.ID, 'subpanel_title_securitygroups')
