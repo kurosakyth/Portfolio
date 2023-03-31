@@ -42,4 +42,3 @@ def test_SCRM_26_candidate(browser):
                                      page_object.skills_view_candidate, page_object.special_notes_view_candidate,
                                      page_object.personality_test_view_candidate, page_object.qualifications_view_candidate,
                                      page_object.security_groups_view_candidate])
-#Click on the rest of tabs and check the information inside.
