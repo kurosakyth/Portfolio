@@ -93,7 +93,7 @@ private_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[
 qa_security_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[4]')
 qa_test_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[5]')
 
-#CREATE & EDIT CANDIDATE
+#CREATE CANDIDATE
 title_create_candidate = 'CREATE » Candidate » CecropiaCRM'
 first_name_create_candidate = (By.ID, 'first_name')
 first_name_validation_message_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[1]/div[2]/div')
@@ -150,6 +150,7 @@ security_groups_view_candidate = (By.ID, 'subpanel_title_securitygroups')
 
 #EDIT CANDIDATE
 title_edit_walden = ('Edit » Walden, Schmidt » Candidate » CecropiaCRM')
+title_view_waldina = ('Waldina, Schmidtita » Candidate » CecropiaCRM')
 first_name_candidate_edit = (By.ID, 'first_name')
 last_name_candidate_edit = (By.ID, 'last_name')
 document_candidate_edit = (By.ID, 'document_number')

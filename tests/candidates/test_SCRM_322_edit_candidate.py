@@ -46,3 +46,25 @@ def test_SCRM_322_edit_candidate(browser):
                                      page_object.educa_candidate_babs_edit, page_object.educa_candidate_mamsmba_edit,
                                      page_object.educa_candidate_md_edit, page_object.educa_candidate_jd_edit,
                                      page_object.educa_candidate_phd_edit, page_object.educa_candidate_doc_edit])
+
+    # Parameterize information to write on the form.
+    fields_to_fill_the_information = [
+    (page_object.first_name_candidate_edit, 'Waldina'),
+    (page_object.last_name_candidate_edit, 'Schmidtita'),
+    (page_object.document_candidate_edit, '11111111'),
+    (page_object.email_candidate_edit, 'walschmidt@gmail.kom'),
+    (page_object.mobile_candidate_edit, '11111111'),
+    (page_object.country_candidate_edit, 'Rusia'),
+    (page_object.city_candidate_edit, 'Moscow'),
+    (page_object.state_province_candidate_edit, 'Zelenograd')]
+    
+    
+    # Overwrite the input with the new information.
+    for field in fields_to_fill_the_information:
+        webdriver.overwrite_input_sending_keys(field[0], field[1])
+
+    # Click on the Save button.
+    webdriver.click_button(page_object.save_btn_create_candidate)
+
+    # Validate the waldina title page.
+    webdriver.compare_title(page_object.title_view_waldina)
