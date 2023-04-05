@@ -38,6 +38,10 @@ class actions:
         actual_keys = element.get_attribute("value")
         assert keys_to_send == actual_keys
 
+    def overwrite_input_sending_keys(self, selector, keys_to_send):
+        self.clear_input(selector)
+        self.send_keys_to_element(selector, keys_to_send)
+
     # Hover the object and click on it.
     def hover_and_click_element(self, selector):
         element = self.get_element(selector)

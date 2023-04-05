@@ -69,11 +69,3 @@ def test_SCRM_82_create_candidate(browser):
 
     # Verify the correctly creation of the candidate.
     webdriver.verify_text(page_object.name_view_candidate, 'Walden')
-#Is not part of the testcase.
-    # Delete the Candidate created.
-    # webdriver.click_button(page_object.delete_view_candidate)
-
-    # # Accept the alert to delete the Candidate.
-    # Alert(browser).accept()
-
-    # time.sleep(5)
