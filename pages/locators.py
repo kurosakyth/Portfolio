@@ -93,7 +93,7 @@ private_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[
 qa_security_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[4]')
 qa_test_group_option_candidate = (By.XPATH, '//*[@id="massassign_group"]/option[5]')
 
-#CREATE CANDIDATE
+#CREATE & EDIT CANDIDATE
 title_create_candidate = 'CREATE » Candidate » CecropiaCRM'
 first_name_create_candidate = (By.ID, 'first_name')
 first_name_validation_message_candidate = (By.XPATH, '//*[@id="detailpanel_-1"]/div/div/div[1]/div[2]/div')
@@ -147,3 +147,29 @@ special_notes_view_candidate = (By.ID, 'subpanel_title_cc_candidate_notes')
 personality_test_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_personality_test')
 qualifications_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_qualification')
 security_groups_view_candidate = (By.ID, 'subpanel_title_securitygroups')
+
+#EDIT CANDIDATE
+title_edit_walden = ('Edit » Walden, Schmidt » Candidate » CecropiaCRM')
+first_name_candidate_edit = (By.ID, 'first_name')
+last_name_candidate_edit = (By.ID, 'last_name')
+document_candidate_edit = (By.ID, 'document_number')
+email_candidate_edit = (By.ID, 'email')
+mobile_candidate_edit = (By.ID, 'mobile')
+country_candidate_edit = (By.XPATH, '//div/input[@id="country"]')
+city_candidate_edit = (By.XPATH, '//div/input[@id="city"]')
+state_province_candidate_edit = (By.XPATH, '//div/input[@id="state_province"]')
+    #EXPERIENCE & EDUCATION
+employed_candidate_edit = (By.ID, 'currently_employed')
+employer_candidate_edit = (By.ID, 'current_employer')
+years_of_experience_candidate_edit = (By.ID, 'years_of_experience')
+cancel_btn_candidate_edit = (By.XPATH, '//div[@class="buttons"]/input[@title="Cancel [Alt+l]"]')
+upload_btn_candidate_edit = (By.XPATH, '//div[@class="buttons"]/button[text()="Upload Candidate"]')
+#EDUCATION DROPDOWN
+educa_candidate_diploma_edit = (By.XPATH, '//*[@id="education"]/option[1]')
+educa_candidate_adgd_edit = (By.XPATH, '//*[@id="education"]/option[2]')
+educa_candidate_babs_edit = (By.XPATH, '//*[@id="education"]/option[3]')
+educa_candidate_mamsmba_edit = (By.XPATH, '//*[@id="education"]/option[4]')
+educa_candidate_md_edit = (By.XPATH, '//*[@id="education"]/option[5]')
+educa_candidate_jd_edit = (By.XPATH, '//*[@id="education"]/option[6]')
+educa_candidate_phd_edit = (By.XPATH, '//*[@id="education"]/option[7]')
+educa_candidate_doc_edit = (By.XPATH, '//*[@id="education"]/option[8]')
