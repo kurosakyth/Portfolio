@@ -7,6 +7,7 @@ from candidates.test_SCRM_26_candidate import test_SCRM_26_candidate
 from candidates.test_SCRM_331_search_candidate import test_SCRM_331_search_candidate
 from candidates.test_SCRM_352_sort_candidate import test_SCRM_352_sort_candidate
 from candidates.test_SCRM_324_view_candidate import test_SCRM_324_view_candidate
+from candidates.test_SCRM_322_edit_candidate import test_SCRM_322_edit_candidate
 #INVOICES
 # from test_invoices_SCRM_43 import test_invoices_SCRM_43
 # from test_create_invoices import test_create_invoices
@@ -21,7 +22,7 @@ def all_tests(browser):
     test_SCRM_331_search_candidate(browser)
     test_SCRM_352_sort_candidate(browser)
     test_SCRM_324_view_candidate(browser)
-    
+    test_SCRM_322_edit_candidate(browser)
     # test_invoices_SCRM_43(browser)
     # test_create_invoices(browser)
     # test_invoices_search(browser)
