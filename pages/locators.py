@@ -137,11 +137,15 @@ recruitment_match_sub_view_candidate = (By.XPATH, '//*[@id="Recruitment_sp_tab"]
 other_match_sub_view_candidate = (By.XPATH, '//*[@id="Other_sp_tab"]/a')
     #SUBPANEL CANDIDATE ACCOUNTS
 candidate_accounts_view_candidate = (By.ID, 'subpanel_title_cc_candidate_accounts')
-select_accounts_view_candidate = (By.ID, 'cc_candidate_accounts_select_button') #//div[@id="subpanel_cc_candidate_accounts"]/input[@id="cc_candidate_accounts_select_button"]
+select_accounts_view_candidate = (By.ID, 'cc_candidate_accounts_select_button')
 search_input_select_accounts_view_candidate = (By.XPATH, '//*[@id="name_advanced"]')
 search_button_select_accounts_view_candidate = (By.XPATH, '//*[@id="search_form_submit"]')
 qa_option_table_select_accounts_view_candidate = (By.XPATH, '//a[text()="qa ACCCOUNT"]')
-# OTHER SUBPANELS FROM THE VIEW CANDIDATE
+create_accounts_view_candidate = (By.ID, 'cc_candidate_accounts_create_button')
+name_create_on_view_candidate = (By.ID, 'name')
+phone_create_on_view_candidate = (By.ID, 'phone_office')
+save_create_on_view_candidate = (By.ID, 'Accounts_subpanel_save_button')
+# SUBPANELS FROM THE VIEW CANDIDATE
 job_offer_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_job_offer')
 candidate_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_candidate_note')
 interviews_view_candidate = (By.ID, 'subpanel_title_cc_interviews_cc_candidate')

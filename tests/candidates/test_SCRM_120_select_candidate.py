@@ -40,8 +40,8 @@ def test_SCRM_120_select_candidate(browser):
     window_handles = browser.window_handles
 
     # Switch to the latest window (the new window)
-    latest_window = window_handles[-1]
-    browser.switch_to.window(latest_window)
+    window = window_handles[-1]
+    browser.switch_to.window(window)
 
     # On the new window search for "qa".
     webdriver.send_keys_to_element(page_object.search_input_select_accounts_view_candidate, 'qa')
@@ -53,7 +53,26 @@ def test_SCRM_120_select_candidate(browser):
     webdriver.click_button(page_object.qa_option_table_select_accounts_view_candidate)
 
 #CREATE A CANDIDATE
+    # Switch back to the original window.
+    window = window_handles[0]
+    browser.switch_to.window(window)
 
+    # Click on the create button.
+    webdriver.click_button(page_object.create_accounts_view_candidate)
+
+    time.sleep(5)
+
+    # Fill the information to create a candidate on the subpanel.
+    # Parameterize information to write on the form.
+    fields_to_fill_the_information = [
+    (page_object.name_create_on_view_candidate, 'Walda'),
+    (page_object.phone_create_on_view_candidate, '2222222222')]
     
+    # For to verify the text on the required fields.
+    for field in fields_to_fill_the_information:
+        webdriver.send_keys_to_element(field[0], field[1])
+
+    # Click on the save button to create the candidate on the subpanel.
+    webdriver.click_button(page_object.save_create_on_view_candidate)
 
     time.sleep(10)
