@@ -135,18 +135,27 @@ activities_match_sub_view_candidate = (By.XPATH, '//*[@id="Activities_sp_tab"]/a
 invoices_match_sub_view_candidate = (By.XPATH, '//*[@id="Invoices_sp_tab"]/a')
 recruitment_match_sub_view_candidate = (By.XPATH, '//*[@id="Recruitment_sp_tab"]/a')
 other_match_sub_view_candidate = (By.XPATH, '//*[@id="Other_sp_tab"]/a')
-    #SUBPANEL CANDIDATE ACCOUNTS
-candidate_accounts_view_candidate = (By.ID, 'subpanel_title_cc_candidate_accounts')
-select_accounts_view_candidate = (By.ID, 'cc_candidate_accounts_select_button')
-search_input_select_accounts_view_candidate = (By.XPATH, '//*[@id="name_advanced"]')
-search_button_select_accounts_view_candidate = (By.XPATH, '//*[@id="search_form_submit"]')
-qa_option_table_select_accounts_view_candidate = (By.XPATH, '//a[text()="qa ACCCOUNT"]')
-create_accounts_view_candidate = (By.ID, 'cc_candidate_accounts_create_button')
+    #SUBPANEL GENERAL INPUTS
+            #CREATE FROM THE MAIN PAGE
 name_create_on_view_candidate = (By.ID, 'name')
 phone_create_on_view_candidate = (By.ID, 'phone_office')
 save_create_on_view_candidate = (By.ID, 'Accounts_subpanel_save_button')
-#SUBPANELS FROM THE VIEW CANDIDATE
+            #SELECT FROM THE SECOND WINDOW
+search_input_select_accounts_view_candidate = (By.XPATH, '//*[@id="name_advanced"]')
+search_button_select_accounts_view_candidate = (By.XPATH, '//*[@id="search_form_submit"]')
+    #SUBPANEL CANDIDATE ACCOUNTS
+candidate_accounts_view_candidate = (By.ID, 'subpanel_title_cc_candidate_accounts')
+create_accounts_view_candidate = (By.ID, 'cc_candidate_accounts_create_button')
+select_accounts_view_candidate = (By.ID, 'cc_candidate_accounts_select_button')
+qa_option_table_select_accounts_view_candidate = (By.XPATH, '//a[text()="qa ACCCOUNT"]')
+    #SUBPANEL JOB OFFER
 job_offer_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_job_offer')
+create_job_offer_view_candidate = (By.ID, 'cc_candidate_cc_job_offer_create_button')
+select_job_offer_view_candidate = (By.ID, 'cc_candidate_cc_job_offer_select_button')
+save_button_job_offer_view_candidate = (By.ID, 'CC_Job_Offer_subpanel_save_button')
+net_developer_option_table_select_accounts_view_candidate = (By.XPATH, '//a[text()=".NET Developer"]')
+
+#SUBPANELS FROM THE VIEW CANDIDATE
 candidate_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_candidate_note')
 interviews_view_candidate = (By.ID, 'subpanel_title_cc_interviews_cc_candidate')
 candi_availab_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_availability_cc_candidate')
@@ -183,5 +192,3 @@ educa_candidate_md_edit = (By.XPATH, '//*[@id="education"]/option[5]')
 educa_candidate_jd_edit = (By.XPATH, '//*[@id="education"]/option[6]')
 educa_candidate_phd_edit = (By.XPATH, '//*[@id="education"]/option[7]')
 educa_candidate_doc_edit = (By.XPATH, '//*[@id="education"]/option[8]')
-
-
