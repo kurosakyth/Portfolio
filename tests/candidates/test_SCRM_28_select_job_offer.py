@@ -4,7 +4,7 @@ import pages.common as common
 import credentials.credentials as account
 import time
 
-def test_SCRM_120_select_candidate(browser):
+def test_SCRM_28_select_job_offer(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
@@ -28,13 +28,13 @@ def test_SCRM_120_select_candidate(browser):
     # Verify the candidate title of the page.
     webdriver.compare_title(page_object.title_walden_candidate_view)
 
-#SELECT A CANDIDATE
+#SELECT A JOB OFFER
 
     # Display the accounts subpanel.
-    webdriver.click_button(page_object.candidate_accounts_view_candidate)
+    webdriver.click_button(page_object.job_offer_view_candidate)
 
     # Click on the Select accounts to open the new window.
-    webdriver.click_button(page_object.select_accounts_view_candidate)
+    webdriver.click_button(page_object.select_job_offer_view_candidate)
 
     # Get a list of all the open windows
     window_handles = browser.window_handles
@@ -43,36 +43,25 @@ def test_SCRM_120_select_candidate(browser):
     window = window_handles[-1]
     browser.switch_to.window(window)
 
-    # On the new window search for "qa".
-    webdriver.send_keys_to_element(page_object.search_input_select_accounts_view_candidate, 'qa')
-    
+    # On the new window search for the role.
+    webdriver.send_keys_to_element(page_object.search_input_select_accounts_view_candidate, '.NET Developer')
+
     # Click on the select button.
     webdriver.click_button(page_object.search_button_select_accounts_view_candidate)
 
     # Select the account to link on.
-    webdriver.click_button(page_object.qa_option_table_select_accounts_view_candidate)
+    webdriver.click_button(page_object.net_developer_option_table_select_accounts_view_candidate)
 
-#CREATE A CANDIDATE
+#CREATE A JOB OFFER
     # Switch back to the original window.
     window = window_handles[0]
     browser.switch_to.window(window)
 
     # Click on the create button.
-    webdriver.click_button(page_object.create_accounts_view_candidate)
+    webdriver.click_button(page_object.create_job_offer_view_candidate)
 
-    time.sleep(5)
+    # Send the keys to the input.
+    webdriver.send_keys_to_element(page_object.name_create_on_view_candidate, 'mobile tester')
 
-    # Fill the information to create a candidate on the subpanel.
-    # Parameterize information to write on the form.
-    fields_to_fill_the_information = [
-    (page_object.name_create_on_view_candidate, 'Walda'),
-    (page_object.phone_create_on_view_candidate, '2222222222')]
-    
-    # For to verify the text on the required fields.
-    for field in fields_to_fill_the_information:
-        webdriver.send_keys_to_element(field[0], field[1])
-
-    # Click on the save button to create the candidate on the subpanel.
-    webdriver.click_button(page_object.save_create_on_view_candidate)
-
-    time.sleep(10)
+    # Click on the save button to create the job offer on the subpanel.
+    webdriver.click_button(page_object.save_button_job_offer_view_candidate)
