@@ -63,11 +63,16 @@ class actions:
         self.send_keys_to_element(search_element, text)
         self.verify_text(element_on_table, text)
         self.clear_input(search_element)
-    
-    # Click on an element and verify text.
-    def click_verify(self, element, element_text, text):
+
+    def click_asc_desc(self, element, class_expected):
         self.click_button(element)
-        self.verify_text(element_text, text)
+        self.check_asc_desc(element, class_expected)
+
+    # Verify the class of the element.
+    def check_asc_desc(self, selector, class_expected):
+        element = self.get_element(selector)
+        class_name = element.get_attribute("class")
+        assert class_expected in class_name
 
     # Method get the elements from the page to create the list.
     def get_elements_from_page(self, selector, timeout=10):
@@ -79,10 +84,12 @@ class actions:
         for locator in locators:
             elements += self.get_elements_from_page(locator)
 
-        # Assert that the elements were displayed
+        # Assert that the elements were displayed.
         for element in elements:
             assert element.is_displayed()
 
     def alert_click(self):
         alert = self.driver.switch_to.alert
         alert.accept()
+
+    

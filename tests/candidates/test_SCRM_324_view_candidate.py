@@ -37,7 +37,7 @@ def test_SCRM_324_view_candidate(browser):
                                      page_object.activities_match_sub_view_candidate, page_object.invoices_match_sub_view_candidate,
                                      page_object.recruitment_match_sub_view_candidate, page_object.other_match_sub_view_candidate,
                                      page_object.candidate_accounts_view_candidate, page_object.job_offer_view_candidate,
-                                     page_object.candidate_view_candidate, page_object.interviews_view_candidate,
+                                     page_object.candidate_note_view_candidate, page_object.interviews_view_candidate,
                                      page_object.candi_availab_related_view_candidate, page_object.candi_track_log_related_view_candidate,
                                      page_object.skills_view_candidate, page_object.special_notes_view_candidate,
                                      page_object.personality_test_view_candidate, page_object.qualifications_view_candidate,

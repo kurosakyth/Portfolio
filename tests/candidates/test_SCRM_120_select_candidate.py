@@ -30,10 +30,10 @@ def test_SCRM_120_select_candidate(browser):
 
 #SELECT A CANDIDATE
 
-    # Display the accounts subpanel.
+    # Display the subpanel.
     webdriver.click_button(page_object.candidate_accounts_view_candidate)
 
-    # Click on the Select accounts to open the new window.
+    # Click on the Select to open the new window.
     webdriver.click_button(page_object.select_accounts_view_candidate)
 
     # Get a list of all the open windows
@@ -49,7 +49,7 @@ def test_SCRM_120_select_candidate(browser):
     # Click on the select button.
     webdriver.click_button(page_object.search_button_select_accounts_view_candidate)
 
-    # Select the account to link on.
+    # Select the option to link on.
     webdriver.click_button(page_object.qa_option_table_select_accounts_view_candidate)
 
 #CREATE A CANDIDATE
@@ -60,10 +60,7 @@ def test_SCRM_120_select_candidate(browser):
     # Click on the create button.
     webdriver.click_button(page_object.create_accounts_view_candidate)
 
-    time.sleep(5)
-
-    # Fill the information to create a candidate on the subpanel.
-    # Parameterize information to write on the form.
+    # Fill the information to create a candidate on the subpanel by parameterize the information.
     fields_to_fill_the_information = [
     (page_object.name_create_on_view_candidate, 'Walda'),
     (page_object.phone_create_on_view_candidate, '2222222222')]
@@ -72,7 +69,5 @@ def test_SCRM_120_select_candidate(browser):
     for field in fields_to_fill_the_information:
         webdriver.send_keys_to_element(field[0], field[1])
 
-    # Click on the save button to create the candidate on the subpanel.
+    # Click on the save button to create the request on the subpanel.
     webdriver.click_button(page_object.save_create_on_view_candidate)
-
-    time.sleep(10)
