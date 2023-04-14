@@ -63,11 +63,6 @@ class actions:
         self.send_keys_to_element(search_element, text)
         self.verify_text(element_on_table, text)
         self.clear_input(search_element)
-    
-    # Click on an element and verify text.
-    def click_verify(self, element, element_text, text):
-        self.click_button(element)
-        self.verify_text(element_text, text)
 
     def click_asc_desc(self, element, class_expected):
         self.click_button(element)
