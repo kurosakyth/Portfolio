@@ -30,10 +30,10 @@ def test_SCRM_28_select_job_offer(browser):
 
 #SELECT A JOB OFFER
 
-    # Display the accounts subpanel.
+    # Display the subpanel.
     webdriver.click_button(page_object.job_offer_view_candidate)
 
-    # Click on the Select accounts to open the new window.
+    # Click on the Select to open the new window.
     webdriver.click_button(page_object.select_job_offer_view_candidate)
 
     # Get a list of all the open windows
@@ -49,7 +49,7 @@ def test_SCRM_28_select_job_offer(browser):
     # Click on the select button.
     webdriver.click_button(page_object.search_button_select_accounts_view_candidate)
 
-    # Select the account to link on.
+    # Select the option to link on.
     webdriver.click_button(page_object.net_developer_option_table_select_accounts_view_candidate)
 
 #CREATE A JOB OFFER
@@ -63,5 +63,5 @@ def test_SCRM_28_select_job_offer(browser):
     # Send the keys to the input.
     webdriver.send_keys_to_element(page_object.name_create_on_view_candidate, 'mobile tester')
 
-    # Click on the save button to create the job offer on the subpanel.
+    # Click on the save button to create the request on the subpanel.
     webdriver.click_button(page_object.save_button_job_offer_view_candidate)
