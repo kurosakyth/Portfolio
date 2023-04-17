@@ -47,7 +47,7 @@ def test_SCRM_28_select_job_offer(browser):
     webdriver.send_keys_to_element(page_object.search_input_select_accounts_view_candidate, '.NET Developer')
 
     # Click on the select button.
-    webdriver.click_button(page_object.search_button_select_accounts_view_candidate)
+    webdriver.click_button(page_object.search_button_select_view_candidate)
 
     # Select the option to link on.
     webdriver.click_button(page_object.net_developer_option_table_select_accounts_view_candidate)
