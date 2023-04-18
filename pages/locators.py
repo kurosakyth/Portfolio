@@ -211,9 +211,14 @@ create_personality_view_candidate = (By.ID, 'cc_candidate_cc_personality_test_cr
 select_personality_view_candidate = (By.ID, 'cc_candidate_cc_personality_test_select_button')
 option_select_personality_view_candidate = (By.XPATH, '//*[@id="MassUpdate"]/table[2]/tbody/tr[1]/td[1]/input')
 save_button_personality_view_candidate = (By.ID, 'CC_Personality_Test_subpanel_save_button')
+    #SUBPANEL QUALIFICATIONS
+qualifications_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_qualification')
+create_qualifications_view_candidate = (By.ID, 'cc_candidate_cc_qualification_create_button')
+select_qualifications_view_candidate = (By.ID, 'cc_candidate_cc_qualification_select_button')
+option_select_qualifications_view_candidate = (By.XPATH, '//a[text()="Licenciatura en Sistemas Computacionales"]')
+save_button_qualifications_view_candidate = (By.ID, 'CC_Qualification_subpanel_save_button')
 #SUBPANELS FROM THE VIEW CANDIDATE
 
-qualifications_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_qualification')
 security_groups_view_candidate = (By.ID, 'subpanel_title_securitygroups')
 
 #EDIT CANDIDATE
