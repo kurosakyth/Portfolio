@@ -2,7 +2,6 @@ import pages.locators as page_object
 from pages.functions import actions
 import pages.common as common
 import credentials.credentials as account
-import time
 
 def test_SCRM_360_track_log_relates(browser):
     
@@ -34,10 +33,10 @@ def test_SCRM_360_track_log_relates(browser):
 #SELECT A AVAILABILITY RELATED
 
     # Display the subpanel.
-    webdriver.click_button(page_object.track_log_related_view_candidate)
+    webdriver.click_button(page_object.skills_view_candidate)
 
     # Click on the Select to open the new window.
-    webdriver.click_button(page_object.select_track_log_view_candidate)
+    webdriver.click_button(page_object.select_skills_view_candidate)
 
     # Get a list of all the open windows
     window_handles = browser.window_handles
@@ -46,7 +45,7 @@ def test_SCRM_360_track_log_relates(browser):
     window = window_handles[-1]
     browser.switch_to.window(window)
 
-    webdriver.click_button(page_object.option_select_track_log_view_candidate)
+    webdriver.click_button(page_object.option_select_skills_view_candidate)
 
 #CREATE A AVAILABILITY RELATED
     # Switch back to the original window.
@@ -54,10 +53,10 @@ def test_SCRM_360_track_log_relates(browser):
     browser.switch_to.window(window)
 
     # Click on the create button.
-    webdriver.click_button(page_object.create_track_log_view_candidate)
+    webdriver.click_button(page_object.create_skills_view_candidate)
     
     # Send keys to the name input.
-    webdriver.send_keys_to_element(page_object.name_create_on_view_candidate, 'waldina')
+    webdriver.send_keys_to_element(page_object.name_create_on_view_candidate, 'java')
 
     # Click on the save button to create the request on the subpanel.
-    webdriver.click_button(page_object.save_button_track_log_view_candidate)
+    webdriver.click_button(page_object.save_button_skills_view_candidate)
