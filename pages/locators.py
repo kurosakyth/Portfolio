@@ -191,8 +191,13 @@ create_track_log_view_candidate = (By.ID, 'formformcc_candidate_track_log_cc_can
 select_track_log_view_candidate = (By.ID, 'cc_candidate_track_log_cc_candidate_select_button')
 save_button_track_log_view_candidate = (By.ID, 'CC_Candidate_Track_Log_subpanel_save_button')
 option_select_track_log_view_candidate = (By.XPATH, '//a[text()="QA TEST TRACK"]')
-#SUBPANELS FROM THE VIEW CANDIDATE
+    #SUBPANEL SKILLS
 skills_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_skill')
+create_skills_view_candidate = (By.ID, 'formformcc_candidate_cc_skill')
+select_skills_view_candidate = (By.ID, 'cc_candidate_cc_skill_select_button')
+option_select_skills_view_candidate = (By.XPATH, '//a[text()=".net"]')
+save_button_skills_view_candidate = (By.ID, 'CC_Skill_subpanel_save_button')
+#SUBPANELS FROM THE VIEW CANDIDATE
 special_notes_view_candidate = (By.ID, 'subpanel_title_cc_candidate_notes')
 personality_test_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_personality_test')
 qualifications_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_qualification')
