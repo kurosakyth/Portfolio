@@ -34,7 +34,7 @@ def test_SCRM_27_availability_related(browser):
 #SELECT A AVAILABILITY RELATED
 
     # Display the subpanel.
-    webdriver.click_button(page_object.candi_availab_related_view_candidate)
+    webdriver.click_button(page_object.availab_related_view_candidate)
 
     # Click on the Select to open the new window.
     webdriver.click_button(page_object.select_availab_related_view_candidate)

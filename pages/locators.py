@@ -175,7 +175,7 @@ select_candidate_interviews_view_candidate = (By.ID, 'cc_interviews_cc_candidate
 save_button_candidate_interview_view_candidate = (By.ID, 'CC_Interviews_subpanel_save_button')
 interv_option_candidate_interviews_candidate = (By.XPATH, '//a[text()="Erick Interview"]')
     #SUBPANEL AVAILABILITY RELATED
-candi_availab_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_availability_cc_candidate')
+availab_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_availability_cc_candidate')
 create_availab_related_view_candidate = (By.ID, 'cc_candidate_availability_cc_candidate_create_button')
 hour_start_time_create_related_view_candidate = (By.ID, 'time_1_hours')
 minutes_start_time_create_related_view_candidate = (By.ID, 'time_1_minutes')
@@ -185,9 +185,11 @@ time_option_create_related_view_candidate = (By.XPATH, '//a[text()="11"]')
 select_availab_related_view_candidate = (By.ID, 'cc_candidate_availability_cc_candidate_select_button')
 save_button_availab_related_view_candidate = (By.ID, 'CC_Candidate_Availability_subpanel_save_button')
 option_select_availab_related_view_candidate = (By.XPATH, '//a[text()="Fabricio Arce"]')
+    #SUBPANEL TRACK LOG RELATED
+track_log_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_track_log_cc_candidate')
 
 #SUBPANELS FROM THE VIEW CANDIDATE
-candi_track_log_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_track_log_cc_candidate')
+
 skills_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_skill')
 special_notes_view_candidate = (By.ID, 'subpanel_title_cc_candidate_notes')
 personality_test_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_personality_test')
