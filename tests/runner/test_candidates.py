@@ -9,6 +9,7 @@ from candidates.test_SCRM_120_select_candidate import test_SCRM_120_select_candi
 from candidates.test_SCRM_28_select_job_offer import test_SCRM_28_select_job_offer
 from candidates.test_SCRM_354_select_note import test_SCRM_354_select_note
 from candidates.test_SCRM_352_select_interview import test_SCRM_352_select_interview
+from candidates.test_SCRM_27_availability_related import test_SCRM_27_availability_related
 
 def candidates_tests(browser):
     test_SCRM_82_create_candidate(browser)
@@ -21,4 +22,5 @@ def candidates_tests(browser):
     test_SCRM_28_select_job_offer(browser)
     test_SCRM_354_select_note(browser)
     test_SCRM_352_select_interview(browser)
+    test_SCRM_27_availability_related(browser)
     test_SCRM_81_delete_candidate(browser)#This should run after the create candidate have finished, so should be at the end of the list.

@@ -1,8 +1,7 @@
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.common.keys import Keys
-import time
+from selenium.webdriver.support.ui import Select
 
 class actions:
 
@@ -19,17 +18,18 @@ class actions:
         WebDriverWait(self.driver, 10).until(ec.title_is(title_expected))
         assert self.driver.title == title_expected
 
-    # Get element to be clickable.
-    def get_clickable_element(self, selector, timeout=10):
-        return WebDriverWait(self.driver, timeout).until(ec.element_to_be_clickable(selector), BaseException)
-
-    # Method to click / select a button / option on the page.
-    def click_button(self, selector):
-        self.get_clickable_element(selector).click()
-
     # Get element from the page.
     def get_element(self, selector, timeout=10):
         return WebDriverWait(self.driver, timeout).until(ec.visibility_of_element_located(selector), BaseException)
+    
+    # Method to click / select a button / option on the page.
+    def click_button(self, selector):
+        self.get_element(selector).click()
+
+    # Method to select an option from a dropdown by value.
+    def dropdown_select(self, selector, option):
+        dropdown = Select(self.get_element(selector))
+        dropdown.select_by_value(option)
     
     # Find element, send keys and validate the keys sent.
     def send_keys_to_element(self, selector, keys_to_send):
