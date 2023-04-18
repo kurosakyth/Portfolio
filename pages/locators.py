@@ -142,6 +142,7 @@ name_create_on_view_candidate = (By.ID, 'name')
 phone_create_on_view_candidate = (By.ID, 'phone_office')
 save_create_on_view_candidate = (By.ID, 'Accounts_subpanel_save_button')
 description_create_on_view_candidate = (By.ID, 'description')
+score_index__create_on_view_candidate = (By.ID, 'score_index')
             #SELECT FROM THE SECOND WINDOW
 search_input_select_accounts_view_candidate = (By.XPATH, '//*[@id="name_advanced"]')
 search_button_select_view_candidate = (By.XPATH, '//*[@id="search_form_submit"]')
@@ -204,8 +205,14 @@ display_portal_special_notes_view_candidate = (By.ID, 'portal_flag')
 select_special_notes_view_candidate = (By.ID, 'cc_candidate_notes_select_button')
 option_select_special_notes_view_candidate = (By.XPATH, '//a[text()="PDF created from system"]')
 save_button_special_notes_view_candidate = (By.ID, 'Notes_subpanel_save_button')
-#SUBPANELS FROM THE VIEW CANDIDATE
+    #SUBPANEL PERSONALITY TEST
 personality_test_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_personality_test')
+create_personality_view_candidate = (By.ID, 'cc_candidate_cc_personality_test_create_button')
+select_personality_view_candidate = (By.ID, 'cc_candidate_cc_personality_test_select_button')
+option_select_personality_view_candidate = (By.XPATH, '//*[@id="MassUpdate"]/table[2]/tbody/tr[1]/td[1]/input')
+save_button_personality_view_candidate = (By.ID, 'CC_Personality_Test_subpanel_save_button')
+#SUBPANELS FROM THE VIEW CANDIDATE
+
 qualifications_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_qualification')
 security_groups_view_candidate = (By.ID, 'subpanel_title_securitygroups')
 
