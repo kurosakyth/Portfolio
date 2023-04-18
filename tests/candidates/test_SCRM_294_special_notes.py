@@ -30,7 +30,7 @@ def test_SCRM_294_special_notes(browser):
     # Verify the candidate title of the page.
     webdriver.compare_title(page_object.title_walden_candidate_view)
 
-#SELECT A AVAILABILITY RELATED
+#SELECT A SPECIAL NOTES
 
     # Display the subpanel.
     webdriver.click_button(page_object.special_notes_view_candidate)
@@ -47,7 +47,7 @@ def test_SCRM_294_special_notes(browser):
 
     webdriver.click_button(page_object.option_select_special_notes_view_candidate)
 
-#CREATE A AVAILABILITY RELATED
+#CREATE A SPECIAL NOTES
     # Switch back to the original window.
     window = window_handles[0]
     browser.switch_to.window(window)

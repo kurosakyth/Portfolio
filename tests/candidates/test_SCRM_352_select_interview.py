@@ -31,7 +31,7 @@ def test_SCRM_352_select_interview(browser):
     # Verify the candidate title of the page.
     webdriver.compare_title(page_object.title_walden_candidate_view)
 
-#SELECT A CANDIDATE NOTE
+#SELECT A INTERVIEW
 
     # Display the subpanel.
     webdriver.click_button(page_object.interviews_view_candidate)
@@ -54,7 +54,7 @@ def test_SCRM_352_select_interview(browser):
     # Select the option to link on.
     webdriver.click_button(page_object.interv_option_candidate_interviews_candidate)
 
-#CREATE A CANDIDATE NOTE name & description
+#CREATE A INTERVIEW
     # Switch back to the original window.
     window = window_handles[0]
     browser.switch_to.window(window)
