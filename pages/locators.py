@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 #URL
 url = "http://develop.devcrm.site/"
+url_candidate = "https://develop.devcrm.site/index.php?module=CC_Candidate&action=index&parentTab=All"
 
 #LOGIN
 title_login = "CecropiaCRM"
@@ -17,7 +18,7 @@ all_dropdown = (By.ID, 'grouptab_7')
 invoice_option = (By.XPATH, '//*[@id="toolbar"]/ul/li[8]/span[2]/ul/li[32]/a')
 profile_option = (By.ID, 'with-label')
 logout_option = (By.XPATH, '//div[@class="desktop-bar"]/ul/li/ul/li/a[@id="logout_link"]')
-candidate_option = (By.XPATH, '//*[@id="toolbar"]/ul/li[9]/span[2]/ul/li[13]/a')
+candidate_option = (By.XPATH, '//div[@id="toolbar"]/ul/li[@class="topnav all"]/span[@class="notCurrentTab"]/ul/li/a[text()="Candidate"]')
 
 #INVOICES
 title_invoice = "Invoices » CecropiaCRM"
@@ -143,7 +144,7 @@ save_create_on_view_candidate = (By.ID, 'Accounts_subpanel_save_button')
 description_create_on_view_candidate = (By.ID, 'description')
             #SELECT FROM THE SECOND WINDOW
 search_input_select_accounts_view_candidate = (By.XPATH, '//*[@id="name_advanced"]')
-search_button_select_accounts_view_candidate = (By.XPATH, '//*[@id="search_form_submit"]')
+search_button_select_view_candidate = (By.XPATH, '//*[@id="search_form_submit"]')
     #SUBPANEL CANDIDATE ACCOUNTS
 candidate_accounts_view_candidate = (By.ID, 'subpanel_title_cc_candidate_accounts')
 create_accounts_view_candidate = (By.ID, 'cc_candidate_accounts_create_button')
@@ -161,9 +162,20 @@ create_candidate_note_view_candidate = (By.ID , 'cc_candidate_cc_candidate_note_
 select_candidate_note_view_candidate = (By.ID, 'cc_candidate_cc_candidate_note_select_button')
 save_button_candidate_note_view_candidate = (By.ID, 'CC_Candidate_Note_subpanel_save_button')
 javascript_option_candidate_note = (By.XPATH, '//a[text()="Javascript"]')
+    #SUBPANEL INTERVIEWS
+interviews_view_candidate = (By.ID, 'subpanel_title_cc_interviews_cc_candidate')
+create_candidate_interviews_view_candidate = (By.ID, 'cc_interviews_cc_candidate_create_button')
+observations_interviews_create_on_view_candidate = (By.ID, 'observation')
+result_interviews_create_on_view_candidate = (By.ID, 'result')
+approved_interviews_create_on_view_candidate = (By.XPATH, '//select[@id = "approved"]')
+approved_option_interviews_create_on_view_candidate = (By.XPATH, '//option[@value="Yes"]')
+date_button_interivews_create_on_view_candidate = (By.ID, 'interview_date_trigger')
+date_option_interviews_create_on_view_candidate = (By.XPATH, '//td[contains(@class, "today")]')
+select_candidate_interviews_view_candidate = (By.ID, 'cc_interviews_cc_candidate_select_button')
+save_button_candidate_interview_view_candidate = (By.ID, 'CC_Interviews_subpanel_save_button')
+interv_option_candidate_interviews_candidate = (By.XPATH, '//a[text()="Erick Interview"]')
 
 #SUBPANELS FROM THE VIEW CANDIDATE
-interviews_view_candidate = (By.ID, 'subpanel_title_cc_interviews_cc_candidate')
 candi_availab_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_availability_cc_candidate')
 candi_track_log_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_track_log_cc_candidate')
 skills_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_skill')

@@ -38,6 +38,7 @@ class actions:
         actual_keys = element.get_attribute("value")
         assert keys_to_send == actual_keys
 
+    # Clear an input to send keys after that.
     def overwrite_input_sending_keys(self, selector, keys_to_send):
         self.clear_input(selector)
         self.send_keys_to_element(selector, keys_to_send)
