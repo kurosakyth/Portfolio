@@ -4,7 +4,7 @@ import pages.common as common
 import credentials.credentials as account
 import time
 
-def test_SCRM_27_availability_related(browser):
+def test_SCRM_360_track_log_relates(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
@@ -34,10 +34,10 @@ def test_SCRM_27_availability_related(browser):
 #SELECT A AVAILABILITY RELATED
 
     # Display the subpanel.
-    webdriver.click_button(page_object.availab_related_view_candidate)
+    webdriver.click_button(page_object.track_log_related_view_candidate)
 
     # Click on the Select to open the new window.
-    webdriver.click_button(page_object.select_availab_related_view_candidate)
+    webdriver.click_button(page_object.select_track_log_view_candidate)
 
     # Get a list of all the open windows
     window_handles = browser.window_handles
@@ -46,7 +46,7 @@ def test_SCRM_27_availability_related(browser):
     window = window_handles[-1]
     browser.switch_to.window(window)
 
-    webdriver.click_button(page_object.option_select_availab_related_view_candidate)
+    webdriver.click_button(page_object.option_select_track_log_view_candidate)
 
 #CREATE A AVAILABILITY RELATED
     # Switch back to the original window.
@@ -54,19 +54,10 @@ def test_SCRM_27_availability_related(browser):
     browser.switch_to.window(window)
 
     # Click on the create button.
-    webdriver.click_button(page_object.create_availab_related_view_candidate)
+    webdriver.click_button(page_object.create_track_log_view_candidate)
     
-    # Click on the hour start time dropdown.
-    webdriver.dropdown_select(page_object.hour_start_time_create_related_view_candidate, "11")
-
-    # Click on the hour start time dropdown.
-    webdriver.dropdown_select(page_object.minutes_start_time_create_related_view_candidate, "15")
-
-    # Click on the hour start time dropdown.
-    webdriver.dropdown_select(page_object.hour_end_time_create_related_view_candidate, "12")
-
-    # Click on the hour start time dropdown.
-    webdriver.dropdown_select(page_object.minutes_end_time_create_related_view_candidate, "15")
+    # Send keys to the name input.
+    webdriver.send_keys_to_element(page_object.name_create_on_view_candidate, 'waldina')
 
     # Click on the save button to create the request on the subpanel.
-    webdriver.click_button(page_object.save_button_availab_related_view_candidate)
+    webdriver.click_button(page_object.save_button_track_log_view_candidate)
