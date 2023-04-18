@@ -17,6 +17,7 @@ from candidates.test_SCRM_352_select_interview import test_SCRM_352_select_inter
 from candidates.test_SCRM_27_availability_related import test_SCRM_27_availability_related
 from candidates.test_SCRM_360_track_log_relates import test_SCRM_360_track_log_relates
 from candidates.test_SCRM_360_track_log_relates import test_SCRM_360_track_log_relates
+from candidates.test_SCRM_294_special_notes import test_SCRM_294_special_notes
 #INVOICES
 # from test_invoices_SCRM_43 import test_invoices_SCRM_43
 # from test_create_invoices import test_create_invoices
@@ -40,6 +41,7 @@ def all_tests(browser):
     test_SCRM_27_availability_related(browser)
     test_SCRM_360_track_log_relates(browser)
     test_SCRM_360_track_log_relates(browser)
+    test_SCRM_294_special_notes(browser)
     test_SCRM_81_delete_candidate(browser)#This should run after the create candidate have finished, so should be at the end of the list.
 
     # test_invoices_SCRM_43(browser)
