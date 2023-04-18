@@ -63,7 +63,7 @@ def test_SCRM_82_create_candidate(browser):
         webdriver.send_keys_to_element(field[0], field[1])
     
 #Change the time.sleep for something that wait to the form to be completed.
-
+    time.sleep(3)
     # Click the Save button.
     webdriver.click_button(page_object.save_btn_create_candidate)
 
