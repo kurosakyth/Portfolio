@@ -14,10 +14,13 @@ def test_SCRM_331_search_candidate(browser):
     # Log in to the page with valid credentials.
     common.login(webdriver, account.username_valid, account.password_valid, page_object.title_homepage)
 
-    #CANDIDATE
+#CANDIDATE
 
-    # Go to the Candidates page.
-    common.all_option_selector(webdriver)
+    # Open the browser with the page.
+    webdriver.open_page(page_object.url_candidate)
+
+    # Validate the Login title page.
+    webdriver.compare_title(page_object.title_candidates)
 
     # Parameterize the validation messages.
     fields = [

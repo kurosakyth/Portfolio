@@ -16,8 +16,11 @@ def test_SCRM_352_select_interview(browser):
 
 #CANDIDATE
 
-    # Go to the Candidates page.
-    common.all_option_selector(webdriver)
+    # Open the browser with the page.
+    webdriver.open_page(page_object.url_candidate)
+
+    # Validate the Login title page.
+    webdriver.compare_title(page_object.title_candidates)
 
     # Search for a Candidate.
     webdriver.send_keys_to_element(page_object.search_candidate, 'Walden')
@@ -33,28 +36,28 @@ def test_SCRM_352_select_interview(browser):
     # Display the subpanel.
     webdriver.click_button(page_object.interviews_view_candidate)
 
-#     # Click on the Select to open the new window.
-#     webdriver.click_button(page_object.select_candidate_interviews_view_candidate)
+    # Click on the Select to open the new window.
+    webdriver.click_button(page_object.select_candidate_interviews_view_candidate)
 
-#     # Get a list of all the open windows
-#     window_handles = browser.window_handles
+    # Get a list of all the open windows
+    window_handles = browser.window_handles
 
-#     # Switch to the latest window (the new window)
-#     window = window_handles[-1]
-#     browser.switch_to.window(window)
+    # Switch to the latest window (the new window)
+    window = window_handles[-1]
+    browser.switch_to.window(window)
 
-#     # Search on the input.
-#     webdriver.send_keys_to_element(page_object.search_input_select_accounts_view_candidate, 'Erick Interview')
+    # Search on the input.
+    webdriver.send_keys_to_element(page_object.search_input_select_accounts_view_candidate, 'Erick Interview')
 
-#     webdriver.click_button(page_object.search_button_select_view_candidate)
+    webdriver.click_button(page_object.search_button_select_view_candidate)
 
-#     # Select the option to link on.
-#     webdriver.click_button(page_object.interv_option_candidate_interviews_candidate)
+    # Select the option to link on.
+    webdriver.click_button(page_object.interv_option_candidate_interviews_candidate)
 
-# #CREATE A CANDIDATE NOTE name & description
-#     # Switch back to the original window.
-#     window = window_handles[0]
-#     browser.switch_to.window(window)
+#CREATE A CANDIDATE NOTE name & description
+    # Switch back to the original window.
+    window = window_handles[0]
+    browser.switch_to.window(window)
 
     # Click on the create button.
     webdriver.click_button(page_object.create_candidate_interviews_view_candidate)

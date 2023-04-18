@@ -17,8 +17,11 @@ def test_SCRM_82_create_candidate(browser):
 
 #CANDIDATE
 
-    # Go to the Candidates page.
-    common.all_option_selector(webdriver)
+    # Open the browser with the page.
+    webdriver.open_page(page_object.url_candidate)
+
+    # Validate the Login title page.
+    webdriver.compare_title(page_object.title_candidates)
 
     # Click on Create Candidate.
     webdriver.click_button(page_object.create_candidate)

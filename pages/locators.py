@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 #URL
 url = "http://develop.devcrm.site/"
+url_candidate = "https://develop.devcrm.site/index.php?module=CC_Candidate&action=index&parentTab=All"
 
 #LOGIN
 title_login = "CecropiaCRM"

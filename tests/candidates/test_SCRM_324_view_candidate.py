@@ -16,8 +16,11 @@ def test_SCRM_324_view_candidate(browser):
 
 #CANDIDATE
 
-    # Go to the Candidates page.
-    common.all_option_selector(webdriver)
+    # Open the browser with the page.
+    webdriver.open_page(page_object.url_candidate)
+
+    # Validate the Login title page.
+    webdriver.compare_title(page_object.title_candidates)
 
     # Search for a Candidate.
     webdriver.send_keys_to_element(page_object.search_candidate, 'Walden')
