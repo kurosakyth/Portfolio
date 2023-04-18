@@ -174,9 +174,19 @@ date_option_interviews_create_on_view_candidate = (By.XPATH, '//td[contains(@cla
 select_candidate_interviews_view_candidate = (By.ID, 'cc_interviews_cc_candidate_select_button')
 save_button_candidate_interview_view_candidate = (By.ID, 'CC_Interviews_subpanel_save_button')
 interv_option_candidate_interviews_candidate = (By.XPATH, '//a[text()="Erick Interview"]')
+    #SUBPANEL AVAILABILITY RELATED
+candi_availab_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_availability_cc_candidate')
+create_availab_related_view_candidate = (By.ID, 'cc_candidate_availability_cc_candidate_create_button')
+hour_start_time_create_related_view_candidate = (By.ID, 'time_1_hours')
+minutes_start_time_create_related_view_candidate = (By.ID, 'time_1_minutes')
+hour_end_time_create_related_view_candidate = (By.ID, 'time_2_hours')
+minutes_end_time_create_related_view_candidate = (By.ID, 'time_2_minutes')
+time_option_create_related_view_candidate = (By.XPATH, '//a[text()="11"]')
+select_availab_related_view_candidate = (By.ID, 'cc_candidate_availability_cc_candidate_select_button')
+save_button_availab_related_view_candidate = (By.ID, 'CC_Candidate_Availability_subpanel_save_button')
+option_select_availab_related_view_candidate = (By.XPATH, '//a[text()="Fabricio Arce"]')
 
 #SUBPANELS FROM THE VIEW CANDIDATE
-candi_availab_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_availability_cc_candidate')
 candi_track_log_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_track_log_cc_candidate')
 skills_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_skill')
 special_notes_view_candidate = (By.ID, 'subpanel_title_cc_candidate_notes')
