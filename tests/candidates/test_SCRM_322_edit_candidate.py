@@ -32,7 +32,7 @@ def test_SCRM_322_edit_candidate(browser):
     webdriver.compare_title(page_object.title_walden_candidate_view)
 
     # Click on edit button.
-    webdriver.click_button(page_object.edit_view_candidate)
+    webdriver.click_button(page_object.edit_button_view_candidate)
 
     # Verify the edit candidate title of the page == to walden.
     webdriver.compare_title(page_object.title_edit_walden)

@@ -15,6 +15,8 @@ from candidates.test_SCRM_360_track_log_relates import test_SCRM_360_track_log_r
 from candidates.test_SCRM_294_special_notes import test_SCRM_294_special_notes
 from candidates.test_SCRM_356_personality import test_SCRM_356_personality
 from candidates.test_SCRM_255_qualifications import test_SCRM_255_qualifications
+from candidates.test_SCRM_359_duplicate_candidate import test_SCRM_359_duplicate_candidate
+
 def candidates_tests(browser):
     test_SCRM_82_create_candidate(browser)
     test_SCRM_26_candidate(browser)
@@ -32,4 +34,5 @@ def candidates_tests(browser):
     test_SCRM_294_special_notes(browser)
     test_SCRM_356_personality(browser)
     test_SCRM_255_qualifications(browser)
+    test_SCRM_359_duplicate_candidate(browser)
     test_SCRM_81_delete_candidate(browser)#This should run after the create candidate have finished, so should be at the end of the list.
