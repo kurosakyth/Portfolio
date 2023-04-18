@@ -116,11 +116,11 @@ save_btn_create_candidate = (By.XPATH, '//div/input[@title="Save"]')
 
 #VIEW CANDIDATE
 title_walden_candidate_view = ('Walden, Schmidt » Candidate » CecropiaCRM')
-edit_view_candidate = (By.ID, 'edit_button')
-duplicate_view_candidate = (By.ID, 'duplicate_button')
-delete_view_candidate = (By.ID, 'delete_button')
-find_duplicate_view_candidate = (By.ID, 'merge_duplicate_button')
-view_change_log_view_candidate = (By.ID, 'btn_view_change_log')
+edit_button_view_candidate = (By.ID, 'edit_button')
+duplicate_button_view_candidate = (By.ID, 'duplicate_button')
+delete_button_view_candidate = (By.ID, 'delete_button')
+find_button_duplicate_view_candidate = (By.ID, 'merge_duplicate_button')
+view_change_log_button_view_candidate = (By.ID, 'btn_view_change_log')
 
     #SUBPANEL BASIC
 basic_subp_view_candidate = (By.XPATH, '//*[@id="pagecontent"]/div[2]/div[4]/div[2]/div[1]/a/div')
@@ -218,7 +218,6 @@ select_qualifications_view_candidate = (By.ID, 'cc_candidate_cc_qualification_se
 option_select_qualifications_view_candidate = (By.XPATH, '//a[text()="Licenciatura en Sistemas Computacionales"]')
 save_button_qualifications_view_candidate = (By.ID, 'CC_Qualification_subpanel_save_button')
 #SUBPANELS FROM THE VIEW CANDIDATE
-
 security_groups_view_candidate = (By.ID, 'subpanel_title_securitygroups')
 
 #EDIT CANDIDATE

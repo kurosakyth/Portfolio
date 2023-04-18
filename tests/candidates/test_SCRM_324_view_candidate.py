@@ -32,9 +32,9 @@ def test_SCRM_324_view_candidate(browser):
     webdriver.compare_title(page_object.title_walden_candidate_view)
 
     # Validate the objects of the Candidate page.
-    webdriver.verify_elements_exist([page_object.edit_view_candidate, page_object.duplicate_view_candidate,
-                                     page_object.delete_view_candidate, page_object.find_duplicate_view_candidate,
-                                     page_object.view_change_log_view_candidate, page_object.basic_subp_view_candidate,
+    webdriver.verify_elements_exist([page_object.edit_button_view_candidate, page_object.duplicate_button_view_candidate,
+                                     page_object.delete_button_view_candidate, page_object.find_button_duplicate_view_candidate,
+                                     page_object.view_change_log_button_view_candidate, page_object.basic_subp_view_candidate,
                                      page_object.name_view_candidate, page_object.exp_educ_sub_view_candidate,
                                      page_object.profile_match_sub_view_candidate, page_object.all_match_sub_view_candidate,
                                      page_object.activities_match_sub_view_candidate, page_object.invoices_match_sub_view_candidate,
