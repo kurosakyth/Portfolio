@@ -187,9 +187,11 @@ save_button_availab_related_view_candidate = (By.ID, 'CC_Candidate_Availability_
 option_select_availab_related_view_candidate = (By.XPATH, '//a[text()="Fabricio Arce"]')
     #SUBPANEL TRACK LOG RELATED
 track_log_related_view_candidate = (By.ID, 'subpanel_title_cc_candidate_track_log_cc_candidate')
-
+create_track_log_view_candidate = (By.ID, 'formformcc_candidate_track_log_cc_candidate')
+select_track_log_view_candidate = (By.ID, 'cc_candidate_track_log_cc_candidate_select_button')
+save_button_track_log_view_candidate = (By.ID, 'CC_Candidate_Track_Log_subpanel_save_button')
+option_select_track_log_view_candidate = (By.XPATH, '//a[text()="QA TEST TRACK"]')
 #SUBPANELS FROM THE VIEW CANDIDATE
-
 skills_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_skill')
 special_notes_view_candidate = (By.ID, 'subpanel_title_cc_candidate_notes')
 personality_test_view_candidate = (By.ID, 'subpanel_title_cc_candidate_cc_personality_test')
