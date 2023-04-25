@@ -2,9 +2,8 @@ import pages.locators as page_object
 from pages.functions import actions
 import pages.common as common
 import credentials.credentials as account
-import time
 
-def test_restore_information(browser):
+def test_restore_information_waldina(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)

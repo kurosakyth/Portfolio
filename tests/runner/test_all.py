@@ -44,7 +44,6 @@ def all_tests(browser):
     test_SCRM_352_select_interview(browser)
     test_SCRM_27_availability_related(browser)
     test_SCRM_360_track_log_relates(browser)
-    test_SCRM_360_track_log_relates(browser)
     test_SCRM_294_special_notes(browser)
     test_SCRM_356_personality(browser)
     test_SCRM_255_qualifications(browser)
