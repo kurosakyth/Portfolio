@@ -95,4 +95,11 @@ class actions:
         alert = self.driver.switch_to.alert
         alert.accept()
 
-    
+    def element_present(self, selector, timeout=10):
+        if WebDriverWait(self.driver, timeout).until(ec.text_to_be_present_in_element(selector), BaseException):
+            return False
+            
+
+
+    # Check if there are search results.
+        
