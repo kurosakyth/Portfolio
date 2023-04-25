@@ -1,0 +1,6 @@
+from restore_information.test_restore_information_walden import test_restore_information_walden
+from restore_information.test_restore_information_waldina import test_restore_information_waldina
+
+def restore_information(browser):
+    test_restore_information_walden(browser)
+    test_restore_information_waldina(browser)

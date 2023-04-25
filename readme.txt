@@ -6,11 +6,19 @@ cd ..
 pipenv run python -m pytest -s --html=reports/report.html .\tests\runner\test_all.py -n 3 
 pause
 
+#-- Run Candidates tests:
+
+cd ..
+pipenv run python -m pytest -s --html=reports/report.html .\tests\runner\test_candidates.py -n 3
+pause
+
 #-- Run invoices tests:
 
 cd ..
-pipenv run python -m pytest -s --html=reports/report.html .\tests\runner\test_invoices.py -n 1
+pipenv run python -m pytest -s --html=reports/report.html .\tests\runner\test_invoices.py -n 3
 pause
+
+IMPORTANT: Is required to run the tests/candidates/test_SCRM_82_create_candidate.py two times before run the Run_tests.bat
 
 Links:
 Test Plan: https://docs.google.com/document/d/197eMvxysvSs55MB4OCdI0cQqOIPal2aUbkVv2RUy6vo/edit
