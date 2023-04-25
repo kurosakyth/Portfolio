@@ -116,6 +116,7 @@ save_btn_create_candidate = (By.XPATH, '//div/input[@title="Save"]')
 
 #VIEW CANDIDATE
 title_walden_candidate_view = ('Walden, Schmidt » Candidate » CecropiaCRM')
+title_waldina_candidate_view = ('Waldina, Schmidtita » Candidate » CecropiaCRM')
 edit_button_view_candidate = (By.ID, 'edit_button')
 duplicate_button_view_candidate = (By.ID, 'duplicate_button')
 delete_button_view_candidate = (By.ID, 'delete_button')

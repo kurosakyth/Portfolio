@@ -30,7 +30,7 @@ class actions:
     def dropdown_select(self, selector, option):
         dropdown = Select(self.get_element(selector))
         dropdown.select_by_value(option)
-    
+
     # Find element, send keys and validate the keys sent.
     def send_keys_to_element(self, selector, keys_to_send):
         element = self.get_element(selector)
@@ -65,6 +65,7 @@ class actions:
         self.verify_text(element_on_table, text)
         self.clear_input(search_element)
 
+    # Method to click on the ascendent or descendent html.
     def click_asc_desc(self, element, class_expected):
         self.click_button(element)
         self.check_asc_desc(element, class_expected)
@@ -89,8 +90,16 @@ class actions:
         for element in elements:
             assert element.is_displayed()
 
+    # Accept the alert.
     def alert_click(self):
         alert = self.driver.switch_to.alert
         alert.accept()
 
-    
+    def element_present(self, selector, timeout=10):
+        if WebDriverWait(self.driver, timeout).until(ec.text_to_be_present_in_element(selector), BaseException):
+            return False
+            
+
+
+    # Check if there are search results.
+        
