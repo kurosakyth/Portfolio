@@ -16,4 +16,4 @@ RUN pipenv install pytest-xdist
 RUN pipenv install pytest-html
 
 # establece el comando a ejecutar al iniciar el contenedor
-CMD ["python"]
+CMD ["python", "tests/runner/test_candidates.py"]
