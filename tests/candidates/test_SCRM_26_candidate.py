@@ -17,7 +17,7 @@ def test_SCRM_26_candidate(browser):
 #CANDIDATE
 
     # Go to the Candidates page.
-    common.all_option_selector(webdriver)
+    common.all_option_candidate(webdriver)
 
     # Validate the objects of the Candidate page.
     webdriver.verify_elements_exist([page_object.create_candidate, page_object.view_candidate, page_object.import_candidate,

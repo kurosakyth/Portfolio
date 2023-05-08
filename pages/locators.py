@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 #URL
 url = "http://develop.devcrm.site/"
 url_candidate = "https://develop.devcrm.site/index.php?module=CC_Candidate&action=index&parentTab=All"
+url_profile = "https://develop.devcrm.site/index.php?module=CC_Profile&action=index&parentTab=All"
 
 #LOGIN
 title_login = "CecropiaCRM"
@@ -18,7 +19,8 @@ all_dropdown = (By.ID, 'grouptab_7')
 invoice_option = (By.XPATH, '//*[@id="toolbar"]/ul/li[8]/span[2]/ul/li[32]/a')
 profile_option = (By.ID, 'with-label')
 logout_option = (By.XPATH, '//div[@class="desktop-bar"]/ul/li/ul/li/a[@id="logout_link"]')
-candidate_option = (By.XPATH, '//div[@id="toolbar"]/ul/li[@class="topnav all"]/span[@class="notCurrentTab"]/ul/li/a[text()="Candidate"]')
+candidate_option_all_dropdown = (By.XPATH, '//div[@id="toolbar"]/ul/li[@class="topnav all"]/span[@class="notCurrentTab"]/ul/li/a[text()="Candidate"]')
+profile_option_all_dropdown = (By.XPATH, '//div[@id="toolbar"]/ul/li[@class="topnav all"]/span[@class="notCurrentTab"]/ul/li/a[text()="Profile"]')
 
 #INVOICES
 title_invoice = "Invoices » CecropiaCRM"
@@ -247,3 +249,8 @@ educa_candidate_md_edit = (By.XPATH, '//*[@id="education"]/option[5]')
 educa_candidate_jd_edit = (By.XPATH, '//*[@id="education"]/option[6]')
 educa_candidate_phd_edit = (By.XPATH, '//*[@id="education"]/option[7]')
 educa_candidate_doc_edit = (By.XPATH, '//*[@id="education"]/option[8]')
+
+
+
+#PROFILE
+title_profile = "Profile » CecropiaCRM"
