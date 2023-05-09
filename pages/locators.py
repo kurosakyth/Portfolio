@@ -254,3 +254,23 @@ educa_candidate_doc_edit = (By.XPATH, '//*[@id="education"]/option[8]')
 
 #PROFILE
 title_profile = "Profile » CecropiaCRM"
+create_profile = (By.XPATH,'//*[@id="actionMenuSidebar"]/ul/li[1]/a/div[2]')
+view_profile = (By.XPATH,'//*[@id="actionMenuSidebar"]/ul/li[2]/a/div[2]')
+import_profile = (By.XPATH,'//*[@id="actionMenuSidebar"]/ul/li[3]/a/div[2]')
+recently_viewed_profile = (By.XPATH,'//*[@id="recentlyViewedSidebar"]/h2')
+    #PROFILE - Columns of table
+system_only_column_profile = (By.XPATH, '//a[contains(text(), "System Only")]')
+name_column_profile = (By.XPATH, '//a[contains(text(), "Name")]')
+published_column_profile = (By.XPATH, '//a[contains(text(), "Published")]')
+    #PROFILE - Second row of the table
+checkbox_dropdown_profile = (By.XPATH, '//ul[@id="selectLinkTop"]/li/label/span')
+select_this_page_checkbox_option_profile = (By.ID, 'button_select_this_page_top')
+select_all_checkbox_option_profile = (By.ID, 'button_select_all_top')
+deselect_checkbox_option_profile = (By.ID, 'button_deselect_top')
+bulk_button_profile = (By.ID, 'select_actions_disabled_top')
+filter_button_profile = (By.XPATH, '//*[@id="pagination"]/td/table/tbody/tr/td/ul[3]/li//a')
+column_chooser_button_profile = (By.XPATH, '//*[@id="pagination"]/td/table/tbody/tr/td/ul[5]/li//a')
+start_arrow_profile = (By.ID, 'listViewStartButton_top')
+previous_arrow_profile = (By.ID, 'listViewPrevButton_top')
+next_arrow_profile = (By.ID, 'listViewNextButton_top')
+end_arrow_profile = (By.ID, 'listViewEndButton_top')
