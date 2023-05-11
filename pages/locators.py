@@ -277,6 +277,9 @@ end_arrow_profile = (By.ID, 'listViewEndButton_top')
 
 #CREATE PROFILE
 title_create_profile = "CREATE » Profile » CecropiaCRM"
-save_btn_create_profile = (By.XPATH, '//*[@id="SAVE"]')
-error_message_creating_profile = (By.XPATH, '//div[@id="detailpanel_-1"]/div/div/div/div/div[text()="Missing required field: Name"]')
-#Missing required field: Name
+save_btn_create_profile = (By.XPATH, '//div/input[@title="Save"]')
+error_message_create_profile = (By.XPATH, '//div[@id="detailpanel_-1"]/div/div/div/div/div[text()="Missing required field: Name"]')
+name_create_profile = (By.ID, 'name')
+
+#VIEW PROFILE
+automation_profile_created = "Automation_profile » Profile » CecropiaCRM"
