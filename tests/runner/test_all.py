@@ -21,6 +21,9 @@ from candidates.test_SCRM_294_special_notes import test_SCRM_294_special_notes
 from candidates.test_SCRM_356_personality import test_SCRM_356_personality
 from candidates.test_SCRM_255_qualifications import test_SCRM_255_qualifications
 from candidates.test_SCRM_359_duplicate_candidate import test_SCRM_359_duplicate_candidate
+#Profiles
+from profiles.test_SCRM_161_profile import test_SCRM_161_profile
+from profiles.test_SCRM_252_create_profile import test_SCRM_252_create_profile
 
 #INVOICES
 # from test_invoices_SCRM_43 import test_invoices_SCRM_43
@@ -28,10 +31,12 @@ from candidates.test_SCRM_359_duplicate_candidate import test_SCRM_359_duplicate
 # from test_invoices_search import test_invoices_search
 
 def all_tests(browser):
+    #Login
     test_SCRM_2_login(browser)
     test_SCRM_1_logout(browser)
     test_SCRM_347_login_invalid(browser)
 
+    #Candidates
     test_SCRM_82_create_candidate(browser)
     test_SCRM_26_candidate(browser)
     test_SCRM_331_search_candidate(browser)
@@ -49,6 +54,10 @@ def all_tests(browser):
     test_SCRM_255_qualifications(browser)
     test_SCRM_359_duplicate_candidate(browser)
     test_SCRM_81_delete_candidate(browser)#This should run after the create candidate have finished, so should be at the end of the list.
+
+    #Profiles
+    test_SCRM_161_profile(browser)
+    test_SCRM_252_create_profile(browser)
 
     # test_invoices_SCRM_43(browser)
     # test_create_invoices(browser)
