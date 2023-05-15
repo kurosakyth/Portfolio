@@ -274,6 +274,7 @@ start_arrow_profile = (By.ID, 'listViewStartButton_top')
 previous_arrow_profile = (By.ID, 'listViewPrevButton_top')
 next_arrow_profile = (By.ID, 'listViewNextButton_top')
 end_arrow_profile = (By.ID, 'listViewEndButton_top')
+option_on_the_table_profile = (By.XPATH, '//*[@id="MassUpdate"]/div[3]/table/tbody/tr[1]/td[4]/b')
 
 #CREATE PROFILE
 title_create_profile = "CREATE » Profile » CecropiaCRM"
@@ -283,3 +284,71 @@ name_create_profile = (By.ID, 'name')
 
 #VIEW PROFILE
 automation_profile_created = "Automation_profile » Profile » CecropiaCRM"
+title_contains_view_profile = "» Profile » CecropiaCRM"
+edit_button_view_profile = (By.ID, 'edit_button')
+duplicate_button_view_profile = (By.ID, 'duplicate_button')
+delete_button_view_profile = (By.ID, 'delete_button')
+find_button_duplicate_view_profile = (By.ID, 'merge_duplicate_button')
+view_change_log_button_view_profile = (By.ID, 'btn_view_change_log')
+previous_arrow_view_profile = (By.XPATH, '//*[@id="pagecontent"]/table[1]/tbody/tr/td[2]/table/tbody/tr/td/span/a[1]')
+next_arrow_view_profile = (By.XPATH, '//*[@id="pagecontent"]/table[1]/tbody/tr/td[2]/table/tbody/tr/td/span/a[2]')
+
+    #BASIC SUBPANEL
+basic_sub_view_profile = (By.XPATH, '//*[@id="pagecontent"]/div[2]/div[4]/div[2]/div[1]/a/div')
+name_basic_view_profile = (By.XPATH, '//div[contains(text(), "Name")]') 
+system_only_basic_view_profile = (By.XPATH, '//div[contains(text(), "System Only")]')
+
+    #SKILLS & QUALIFICATIONS SUBPANEL
+skills_quallifications_sub_view_profile = (By.XPATH, '//*[@id="pagecontent"]/div[3]/div[1]/div/a/div')
+            #SKILLS
+h3_sk_view_profile = (By.XPATH, '//*[@id="pagecontent"]/div[3]/div[1]/div/a/div')
+show_entries_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills_length"]')
+select_a_sk_view_profile = (By.XPATH, '//span[contains(text(), "Select a Skill")]') 
+name_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills"]/thead/tr/th[1]')
+expected_rating_sk_view_profile = (By.XPATH, '//th[contains(text(), "Expected Rating")]')
+experience_sk_view_profile = (By.XPATH, '//th[contains(text(), "Experience")]')
+showing_entries_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills_info"]')
+previous_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills_previous"]')
+next_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills_next"]')
+            #QUALIFICATIONS
+h3_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
+show_entries_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
+favourites_quali_view_profile = (By.ID, "justFavouritesDiv")
+select_quali_view_profile = (By.ID, 'select2-qualification_list-container')
+name_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
+level_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
+suport_requiered_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
+showing_entries_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
+previous_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
+next_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
+    
+    #PROFILE MATCHES SUBPANEL 
+profile_match_sub_view_profile = (By.XPATH, '//*[@id="pagecontent"]/div[4]/div[1]/div/a/div')
+employees_prof_match_view_profile = (By.XPATH, '//nav/a[contains(text(), "Employees")]')
+candidates_prof_match_view_profile = (By.XPATH, '//nav/a[contains(text(), "Candidates")]')
+active_only_prof_match_view_profile = (By.XPATH, '//*[@id="tab-employees"]/div/div/div[1]/label[1]')
+unassigned_only_prof_match_view_profile = (By.XPATH, '//*[@id="tab-employees"]/div/div/div[1]/label[2]')
+copy_btn_prof_match_view_profile = (By.XPATH, '//*[@id="dataTableEmployeesMatchingInformation_wrapper"]//span[contains(text(), "Copy")]') #Enseñar a meli
+pdf_btn_prof_match_view_profile = (By.XPATH, '//*[@id="dataTableEmployeesMatchingInformation_wrapper"]//span[contains(text(), "PDF")]')
+csv_btn_prof_match_view_profile = (By.XPATH, '//*[@id="dataTableEmployeesMatchingInformation_wrapper"]//span[contains(text(), "CSV")]')
+excel_btn_prof_match_view_profile = (By.XPATH, '//*[@id="dataTableEmployeesMatchingInformation_wrapper"]//span[contains(text(), "Excel")]')
+show_rows_btn_prof_match_view_profile = (By.XPATH, '//*[@id="dataTableEmployeesMatchingInformation_wrapper"]//span[contains(text(), "Show")]')
+name_column_prof_match_view_profile = (By.XPATH, '//table[@id="dataTableEmployeesMatchingInformation"]//th[contains(text(), "Name")]')
+country_law_column_prof_match_view_profile = (By.XPATH, '//table[@id="dataTableEmployeesMatchingInformation"]//th[contains(text(), "Country Law")]')
+english_column_prof_match_view_profile = (By.XPATH, '//table[@id="dataTableEmployeesMatchingInformation"]//th[contains(text(), "English Level")]')
+profile_rating_column_prof_match_view_profile = (By.XPATH, '//table[@id="dataTableEmployeesMatchingInformation"]//th[contains(text(), "Profile Rating")]')
+active_column_prof_match_view_profile = (By.XPATH, '//table[@id="dataTableEmployeesMatchingInformation"]//th[contains(text(), "Active")]')
+is_assigned_column_prof_match_view_profile = (By.XPATH, '//table[@id="dataTableEmployeesMatchingInformation"]//th[contains(text(), "Is Assigned")]')
+chart_column_prof_match_view_profile = (By.XPATH, '//table[@id="dataTableEmployeesMatchingInformation"]//th[contains(text(), "Chart")]')
+
+    # OPTIONS
+all_sub_view_profile = (By.ID, 'All_sp_tab')
+careers_sub_view_profile = (By.ID, 'Careers_sp_tab')
+hr_sub_view_profile = (By.ID, 'HR_sp_tab')
+other_sub_view_profile = (By.ID, 'Other_sp_tab')
+
+    #RECUITMENT REQUEST SUBPANEL
+recruitment_request_sub_view_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_cc_recruitment_request_cc_profile"]')
+job_description_sub_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_cc_job_description_cc_profile"]')
+job_offer_view_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_cc_profile_cc_job_offer"]')
+security_groups_view_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_securitygroups"]')

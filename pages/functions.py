@@ -14,9 +14,9 @@ class actions:
         self.driver.get(url) 
 
     # Validate the title of the page and compare if it is correct. 
-    def compare_title(self, title_expected):
-        WebDriverWait(self.driver, 10).until(ec.title_is(title_expected))
-        assert self.driver.title == title_expected
+    def compare_title(self, partial_title_expected):
+        WebDriverWait(self.driver, 10).until(ec.title_contains(partial_title_expected))
+        assert partial_title_expected in self.driver.title
 
     # Get element from the page.
     def get_element(self, selector, timeout=10):
