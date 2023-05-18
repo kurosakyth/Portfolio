@@ -29,6 +29,7 @@ def test_SCRM_252_create_profile(browser):
     # Verify the candidate title of the page.
     webdriver.compare_title(page_object.title_contains_view_profile)
 
+    # Display all the subpanels.
     webdriver.click_button(page_object.skills_quallifications_sub_view_profile)
     webdriver.click_button(page_object.profile_match_sub_view_profile)
     webdriver.click_button(page_object.recruitment_request_sub_view_profile)
@@ -36,7 +37,6 @@ def test_SCRM_252_create_profile(browser):
     webdriver.click_button(page_object.job_offer_view_profile)
     webdriver.click_button(page_object.security_groups_view_profile)
 
-    # time.sleep(3)
     # Validate the objects of the Candidate page.
     webdriver.verify_elements_exist([page_object.edit_button_view_profile, page_object.duplicate_button_view_profile,
                                      page_object.delete_button_view_profile, page_object.find_button_duplicate_view_profile,
