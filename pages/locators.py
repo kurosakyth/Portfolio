@@ -303,7 +303,9 @@ skills_quallifications_sub_view_profile = (By.XPATH, '//*[@id="pagecontent"]/div
             #SKILLS
 h3_sk_view_profile = (By.XPATH, '//*[@id="pagecontent"]/div[3]/div[1]/div/a/div')
 show_entries_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills_length"]')
+                    #SKILLS DROPDOWN
 select_a_sk_view_profile = (By.XPATH, '//span[contains(text(), "Select a Skill")]') 
+options_list_sk_view_profile = (By.XPATH, '//ul[@id="select2-skill_list-results"]/li')
 name_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills"]/thead/tr/th[1]')
 expected_rating_sk_view_profile = (By.XPATH, '//th[contains(text(), "Expected Rating")]')
 experience_sk_view_profile = (By.XPATH, '//th[contains(text(), "Experience")]')
