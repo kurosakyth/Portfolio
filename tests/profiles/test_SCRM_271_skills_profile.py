@@ -48,4 +48,3 @@ def test_SCRM_252_create_profile(browser):
     
     # Select an option of the Qualification dropdown.
     webdriver.click_button(page_object.options_list_quali_view_profile)
-    time.sleep(5)
