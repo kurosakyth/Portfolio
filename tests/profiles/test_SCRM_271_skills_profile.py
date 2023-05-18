@@ -25,15 +25,27 @@ def test_SCRM_252_create_profile(browser):
     # Click on the first profile on the list.
     webdriver.click_button(page_object.option_on_the_table_profile)
 
+#PROFILE OPTION
 
-    # Verify the candidate title of the page.
+    # Verify the prfoile title of the page.
     webdriver.compare_title(page_object.title_contains_view_profile)
 
     # Display the Skills & Qualifications subpanel.
     webdriver.click_button(page_object.skills_quallifications_sub_view_profile)
-
+    
+    #SKILL
+    
     # Select a Skill.
     webdriver.click_button(page_object.select_a_sk_view_profile)
     
     # Select an option of the Skill dropdown.
     webdriver.click_button(page_object.options_list_sk_view_profile)
+
+    #QUALIFICATION
+
+    # Select a Qualification.
+    webdriver.click_button(page_object.select_quali_view_profile)
+    
+    # Select an option of the Qualification dropdown.
+    webdriver.click_button(page_object.options_list_quali_view_profile)
+    time.sleep(5)

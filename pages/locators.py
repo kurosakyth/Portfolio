@@ -306,6 +306,7 @@ show_entries_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills_length"]')
                     #SKILLS DROPDOWN
 select_a_sk_view_profile = (By.XPATH, '//span[contains(text(), "Select a Skill")]') 
 options_list_sk_view_profile = (By.XPATH, '//ul[@id="select2-skill_list-results"]/li')
+
 name_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills"]/thead/tr/th[1]')
 expected_rating_sk_view_profile = (By.XPATH, '//th[contains(text(), "Expected Rating")]')
 experience_sk_view_profile = (By.XPATH, '//th[contains(text(), "Experience")]')
@@ -316,7 +317,10 @@ next_sk_view_profile = (By.XPATH, '//*[@id="dataTableSkills_next"]')
 h3_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
 show_entries_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
 favourites_quali_view_profile = (By.ID, "justFavouritesDiv")
-select_quali_view_profile = (By.ID, 'select2-qualification_list-container')
+                    #QUALIFICATIONS DROPDOWN
+select_quali_view_profile = (By.XPATH, '//span[contains(text(), "Select a Qualification")]')
+options_list_quali_view_profile = (By.XPATH, '//ul[@id="select2-qualification_list-results"]/li')
+
 name_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
 level_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
 suport_requiered_quali_view_profile = (By.XPATH, '//*[@id="mainQualificationsDiv"]/div/div[1]/h3')
