@@ -355,6 +355,12 @@ other_sub_view_profile = (By.ID, 'Other_sp_tab')
 
     #RECUITMENT REQUEST SUBPANEL
 recruitment_request_sub_view_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_cc_recruitment_request_cc_profile"]')
+create_recruit_req_view_profile = (By.XPATH, '//*[@id="cc_recruitment_request_cc_profile_create_button"]')
+name_create_recruit_req_view_profile = (By.XPATH, '//input[@id="name"]')
+save_btn_create_recruit_req_view_profile = (By.ID, "CC_Recruitment_Request_subpanel_save_button")
+select_recruit_req_view_profile = (By.XPATH, '//*[@id="cc_recruitment_request_cc_profile_select_button"]')
+option_select_recruit_req_view_profile = (By.XPATH, '//*[@id="MassUpdate"]/table[2]/tbody/tr[2]/td[3]/a')
+
 job_description_sub_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_cc_job_description_cc_profile"]')
 job_offer_view_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_cc_profile_cc_job_offer"]')
 security_groups_view_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_securitygroups"]')
