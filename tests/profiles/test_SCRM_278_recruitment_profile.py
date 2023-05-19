@@ -60,22 +60,3 @@ def test_SCRM_278_recruitment_profile(browser):
 
     # Click option of the select window.
     webdriver.click_button(page_object.option_select_recruit_req_view_profile)
-
-#     # Other window.
-
-# #In progress.
-
-
-# #CREATE A JOB OFFER
-#     # Switch back to the original window.
-#     window = window_handles[0]
-#     browser.switch_to.window(window)
-
-#     # Click on the create button.
-#     webdriver.click_button(page_object.create_job_offer_view_candidate)
-
-#     # Send the keys to the input.
-#     webdriver.send_keys_to_element(page_object.name_create_on_view_candidate, 'mobile tester')
-
-#     # Click on the save button to create the request on the subpanel.
-#     webdriver.click_button(page_object.save_button_job_offer_view_candidate)
