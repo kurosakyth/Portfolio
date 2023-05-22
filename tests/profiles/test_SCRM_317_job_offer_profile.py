@@ -4,7 +4,7 @@ import pages.common as common
 import credentials.credentials as account
 import time
 
-def test_SCRM_301_job_description_profile(browser):
+def test_SCRM_317_job_offer_profile(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)

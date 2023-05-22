@@ -3,6 +3,8 @@ from profiles.test_SCRM_252_create_profile import test_SCRM_252_create_profile
 from profiles.test_SCRM_254_view_profile import test_SCRM_254_view_profile
 from profiles.test_SCRM_278_recruitment_profile import test_SCRM_278_recruitment_profile
 from profiles.test_SCRM_301_job_description_profile import test_SCRM_301_job_description_profile
+from profiles.test_SCRM_317_job_offer_profile import test_SCRM_317_job_offer_profile
+from profiles.test_SCRM_361_duplicate_profile import test_SCRM_361_duplicate_profile
 
 def profiles_tests(browser):
     test_SCRM_161_profile(browser)
@@ -10,3 +12,5 @@ def profiles_tests(browser):
     test_SCRM_254_view_profile(browser)
     test_SCRM_278_recruitment_profile(browser)
     test_SCRM_301_job_description_profile(browser)
+    test_SCRM_317_job_offer_profile(browser)
+    test_SCRM_361_duplicate_profile(browser)
