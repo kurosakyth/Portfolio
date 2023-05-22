@@ -4,7 +4,7 @@ import pages.common as common
 import credentials.credentials as account
 import time
 
-def test_SCRM_278_recruitment_profile(browser):
+def test_SCRM_301_job_description_profile(browser):
     
     # Using the fixture configuration run the browser.
     webdriver = actions(browser)
@@ -30,26 +30,26 @@ def test_SCRM_278_recruitment_profile(browser):
     # Verify the prfoile title of the page.
     webdriver.compare_title(page_object.title_contains_view_profile)
 
-#RECRUITMENT SUBPANEL
+#JOB DESCRIPTION SUBPANEL
 
-    #CREATE RECRUITMENT.
+    #CREATE JOB DESCRIPTION.
 
-    # Display the recruitment request subpanel.
-    webdriver.click_button(page_object.recruitment_request_sub_view_profile)
+    # Display the job description subpanel.
+    webdriver.click_button(page_object.job_description_sub_profile)
     
-    # Click on the create recruitment request button.
-    webdriver.click_button(page_object.create_recruit_req_view_profile)
+    # Click on the create job description button.
+    webdriver.click_button(page_object.create_job_description_view_profile)
 
-    # Fill the name input of the create recruitment request.
-    webdriver.send_keys_to_element(page_object.name_create_recruit_req_view_profile, "Automation_profile")
+    # Fill the name input of the create job description.
+    webdriver.send_keys_to_element(page_object.name_create_job_description_view_profile, "Automation_profile")
 
     # Click on the Save button.
-    webdriver.click_button(page_object.save_btn_create_recruit_req_view_profile)
+    webdriver.click_button(page_object.save_btn_create_job_description_view_profile)
 
-    #SELECT RECRUITMENT.
+    #SELECT JOB DESCRIPTION.
     
-    # Click on the select recruitment request button.
-    webdriver.click_button(page_object.select_recruit_req_view_profile)
+    # Click on the select job description button.
+    webdriver.click_button(page_object.select_job_description_view_profile)
 
     # Get a list of all the open windows
     window_handles = browser.window_handles
@@ -59,4 +59,4 @@ def test_SCRM_278_recruitment_profile(browser):
     browser.switch_to.window(window)
 
     # Click option of the select window.
-    webdriver.click_button(page_object.option_select_recruit_req_view_profile)
+    webdriver.click_button(page_object.option_select_job_description_view_profile)

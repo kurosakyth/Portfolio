@@ -361,6 +361,13 @@ save_btn_create_recruit_req_view_profile = (By.ID, "CC_Recruitment_Request_subpa
 select_recruit_req_view_profile = (By.XPATH, '//*[@id="cc_recruitment_request_cc_profile_select_button"]')
 option_select_recruit_req_view_profile = (By.XPATH, '//*[@id="MassUpdate"]/table[2]/tbody/tr[2]/td[3]/a')
 
+    #JOB DESCRIPTION
 job_description_sub_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_cc_job_description_cc_profile"]')
+create_job_description_view_profile = (By.XPATH, '//*[@id="cc_job_description_cc_profile_create_button"]')
+name_create_job_description_view_profile = (By.XPATH, '//input[@id="name"]')
+save_btn_create_job_description_view_profile = (By.ID, "CC_Job_Description_subpanel_save_button")
+select_job_description_view_profile = (By.XPATH, '//*[@id="cc_job_description_cc_profile_select_button"]')
+option_select_job_description_view_profile = (By.XPATH, '//*[@id="MassUpdate"]/table[2]/tbody/tr[1]/td[3]/a')
+
 job_offer_view_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_cc_profile_cc_job_offer"]')
 security_groups_view_profile = (By.XPATH, '//ul[@id="subpanel_list"]/li[@id="whole_subpanel_securitygroups"]')
